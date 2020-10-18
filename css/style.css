@@ -1,0 +1,127 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+#top-red-bar {
+  position: relative;
+  background: #fa2e2e;
+  height: 30px;
+  line-height: 28px;
+  font-size: 13px;
+}
+
+#top-red-bar ul {
+  list-style: none;
+  text-align: right;
+  padding: 1px 10px;
+  margin: 0;
+  font-size: 12px;
+}
+
+#top-red-bar ul li a, #footer ul li a, #primary-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+#top-red-bar ul li a:hover, #footer ul li a:hover, #primary-menu a:hover {
+  color: #eee;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#header {
+  height: 70px;
+}
+
+/* Header Dark Bar */
+#logo {
+  position: absolute;
+  float: left;
+  font-size: 36px;
+  line-height: 100%;
+  margin-right: 40px;
+  height: 70px;
+  top: -30px;
+}
+
+#logo img {
+  height: 120px;
+  transition: height .4s ease;
+}
+
+#primary-menu {
+  float: right;
+}
+
+#primary-menu ul {
+  list-style: none;
+  float: right;
+}
+
+#primary-menu li {
+  float: left;
+}
+
+#primary-menu a {
+  display: block;
+  line-height: 22px;
+  padding: 24px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.sticky #logo {
+  height: 70px;
+  top: 0;
+}
+.sticky #logo img {
+  height: 70px;
+  top: 0;
+}
+
+/* footer */
+#footer {
+  position: relative;
+  background-color: #f01c24 !important;
+  color: #CCC;
+  border-top-color: rgba(0,0,0,0.2);
+  background-image: url(../img/footer-flag.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+#footer h1, #footer p, #footer ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+#footer p {
+  font-weight: 200;
+}
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+#footer ul li a {
+  font-weight: 200;
+}
+#footer .col-md-3 img {
+  padding: 15px 0;
+}
+
+/* bootstrap */
+.bg-dark {
+  background-color: #333 !important;
+}
+.container {
+  position: relative;
+}
