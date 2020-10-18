@@ -13,7 +13,7 @@
             <br>ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง
             <br>กรุงเทพมหานคร 10310
             <br>โทร. 02-768-8888
-            <br>โทรสาร. 02-768-8889        </p>
+            <br>โทรสาร. 02-768-8889</p>
         </div>
         <div class="col-md-3 mb-4">
           <h1>OISHI BRAND CONCEPT</h1>
@@ -53,6 +53,30 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // code for silde show
+    var mySwiper = new Swiper('.swiper-container', {
+      // play silde loopwise
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // autoplay set
+      autoplay: {
+        delay: 5000,
+      }
+    })
+  </script>
 
 </body>
 </html>

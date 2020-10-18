@@ -8,18 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/fontawesome.min.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./js/swiper.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="top-red-bar">
-    <div class="container">
+    <div class="container clearfix">
       <ul>
         <li>
           <a href="./index.php?lang=en">
-            <img src="./img/icon-en.jpg"> English
+            <img src="./img/icon-en.jpg"> ENGLISH
           </a>
         </li>
       </ul>
@@ -27,30 +29,38 @@
   </div>
 
   <header id="header" class="bg-dark">
-    <div class="container">
+    <div class="container clearfix">
       <div id="logo">
         <a href="./index.php">
           <img src="./img/logo.jpg">
         </a>
       </div>
 
-      <nav id="primary-menu">
-        <ul style="touch-action: pan-y;">
-            <li><a href="/business-overview.php" target="_blank">About Oishi</a></li>
-            <li><a href="/oishi_brand.php">Oishi Brand</a></li>
-            <li><a href="/news_activity.php">Oishi News &amp; Activity</a></li>
-            <li><a href="/promotion.php">Oishi Promotion</a></li>
-            <li><a href="/export_center.php">Export Center</a></li>
-            <li><a href="/contact.php">Contact Us</a></li>
-            <li><a href="/investor.php" target="_blank">Investor Relations</a></li>
-            <li><a href="/contact.php#career">Career</a></li>
-          </ul>
+      <nav id="primary-menu" class="navbar navbar-expand-lg">
+        <span class="navbar-brand" href="#"></span>
+        <buttons class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </buttons>
+        <div class="collapse navbar-collapse" id="topMenu">
+          <div class="navbar-nav" style="touch-action: pan-y;">
+              <a class="nav-item nav-link" href="/business-overview.php" style="border: none !important;" target="_blank">About Oishi</a>
+              <a class="nav-item nav-link" href="/oishi_brand.php">Oishi Brand</a>
+              <a class="nav-item nav-link" href="/news_activity.php">Oishi News &amp; Activity</a>
+              <a class="nav-item nav-link" href="/promotion.php">Oishi Promotion</a>
+              <a class="nav-item nav-link" href="/export_center.php">Export Center</a>
+              <a class="nav-item nav-link" href="/contact.php">Contact Us</a>
+              <a class="nav-item nav-link" href="/investor.php" target="_blank">Investor Relations</a>
+              <a class="nav-item nav-link" href="/contact.php#career">Career</a>
+          </div>
+        </div>
       </nav>
     </div>
 
     <script>
       $(window).scroll(function () {
-        if ($(window).scrollTop() > 30) {
+        if ($(window).scrollTop() > 30 && $(window).width() >= 992) {
           $('#header').addClass("sticky");
         } else {
           $('#header').removeClass("sticky");
