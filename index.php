@@ -9,7 +9,7 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="/img/big-banner-01.jpg" style="width: 100%">
+              <img src="img/big-banner-01.jpg" style="width: 100%">
             </div>
         </div>
         <!-- If we need pagination -->
@@ -27,7 +27,7 @@
 
   <!-- slide show ลายพู่กันด้านล่าง -->
   <div class="content-bg">
-    <img class="img-fluid" src="./img/content-bg.png">
+    <img class="img-fluid" src="img/content-bg.png">
   </div>
   <!-- สิ้นสุด slide show รูปด้านบน -->
 
@@ -95,6 +95,9 @@
         </div>
       </div>
 
+      <div class="header-part">
+        <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
+      </div>
       <div id="new-and-activity" class="owl-carousel owl-theme">
 
       </div>
@@ -109,7 +112,7 @@
         showNewAndActivity(JSON.parse(request.responseText));
       }
     };
-    request.open("GET", "./json/news_activity.json", true);
+    request.open("GET", "json/news_activity.json", true);
     request.send();
 
     showNewAndActivity = (data, op="") => {

@@ -127,6 +127,24 @@ a:hover {
   padding: 50px 0;
 }
 
+.header-part {
+  padding: 50px 0 30px 0;
+}
+.header-part h1 {
+  font-size: 36px;
+  color: red;
+  font-weight: normal;
+  margin: 0;
+}
+.header-part h1 span {
+  color: #333;
+}
+.header-part h1 i {
+  color: #333;
+  font-style: normal;
+  font-family: 'Kanit-ExtraLight', sans-serif;
+}
+
 .index-content h1{
   font-family: 'Kanit-Medium', sans-serif;
   font-size: 36px;
