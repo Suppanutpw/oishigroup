@@ -1,7 +1,7 @@
 <?php
   require('header.php');
 ?>
-  <!-- รูปด้านบน -->
+  <!-- เริ่ม slide show รูปด้านบน -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
     <!-- Slider main container -->
     <div class="swiper-container w-100">
@@ -16,15 +16,27 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev">
+          <i class="fa fa-angle-left fa-5" aria-hidden="true"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
     </div>
   </section>
 
-  <!-- เนื้อหา -->
-  <div class="container">
-    <h2 class="text-center">WTF Hello World</h2>
+  <!-- slide show ลายพู่กันด้านล่าง -->
+  <div class="content-bg">
+    <img class="img-fluid" src="./img/content-bg.png">
   </div>
+  <!-- สิ้นสุด slide show รูปด้านบน -->
+
+  <!-- เนื้อหา -->
+  <section id="content" style="z-index: 20 !important;">
+    <div class="container clearfix">
+      <h2 class="text-center">Hello World</h2>
+    </div>
+  </section>
 
 <?php
   require('footer.php');
