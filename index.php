@@ -17,7 +17,7 @@
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev">
-          <i class="fa fa-angle-left fa-5" aria-hidden="true"></i>
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
         </div>
         <div class="swiper-button-next">
           <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -107,6 +107,7 @@
 
   <script>
     let request = new XMLHttpRequest();
+    var new_and_activity;
     request.onreadystatechange = function () {
       if (request.readyState == 4 && request.status == 200) {
         showNewAndActivity(JSON.parse(request.responseText));
@@ -115,6 +116,7 @@
     request.open("GET", "json/news_activity.json", true);
     request.send();
 
+    // generate json
     showNewAndActivity = (data, op="") => {
       for (var i = 0; i < data.length; i++) {
         // trim String
@@ -123,13 +125,14 @@
 
         op += `<div class="card item"><img class="card-img-top" src="${data[i].img}">`;
         op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-        op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด</a></div></div>`;
+        op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
       }
       $('#new-and-activity').html(op);
-      $('.owl-carousel').owlCarousel({
-          loop:true,
+      var new_and_activity = $('.owl-carousel').owlCarousel({
+          loop:false,
           margin:10,
-          nav:false,
+          nav:true,
+          dots: false,
           responsive:{
               0:{
                   items:2
@@ -138,7 +141,9 @@
                   items:3
               }
           }
-      })
+      });
+      $('.owl-prev').html("");
+      $('.owl-next').html("");
     }
 
     $(window).resize(function () {

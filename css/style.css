@@ -192,6 +192,36 @@ h4.card-title {
   font-weight: 400;
 }
 
+.card-button, .card-button i {
+  font-size: 18px;
+  line-height: 40px;
+  transition: all .4s;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.card-button {
+  color: #fff;
+  font-family: 'Kanit-Light', sans-serif;
+  padding: 0 32px;
+  position: relative;
+  background-color: red;
+  overflow: hidden;
+}
+.card-button i {
+  width: 38px;
+  height: 40px;
+  position: absolute;
+  right: -38px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
+}
+.card-button:hover {
+  color: #fff;
+  padding: 0 51px 0 13px;
+}
+.card-button:hover i {
+  right: 0;
+}
+
 @media only screen and (max-width: 992px) {
   .align-right {
     text-align: left;
@@ -269,6 +299,40 @@ h4.card-title {
 }
 .social-icon:hover i {
   transform: translateY(-40px);
+}
+
+/* owl button */
+.owl-next, .owl-prev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 30px);
+  opacity: 0;
+  background-size: cover !important;
+  background-position: center;
+  transition: all .4s;
+}
+.owl-next:hover, .owl-prev:hover {
+  background-color: #fff0 !important;
+}
+.owl-next {
+  right: -36px;
+  background-image: url(../img/owl-next.png) !important;
+}
+.owl-prev {
+  left: -36px;
+  background-image: url(../img/owl-prev.png) !important;
+}
+.disabled {
+  display: none !important;
+}
+.owl-carousel:hover .owl-next {
+  right: -75px;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-prev {
+  left: -75px;
+  opacity: 1;
 }
 
 /* swipe slide show */
