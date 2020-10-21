@@ -4,11 +4,11 @@ body {
   color: #333;
 }
 a {
-  color: red;
+  color: #333;
   text-decoration: none;
 }
 a:hover {
-  color: #333;
+  color: #666;
   text-decoration: none;
 }
 
@@ -125,6 +125,7 @@ a:hover {
   z-index: 20 !important;
   position: relative;
   padding: 50px 0;
+  line-height: 1.8;
 }
 
 .header-part {
@@ -161,6 +162,12 @@ a:hover {
   font-size: 15px;
   color: #666;
   margin: 0;
+}
+.index-content .col-md-8 a {
+  color: red;
+}
+.index-content .col-md-8 a:hover {
+  color: #333;
 }
 
 .img-and-link {
