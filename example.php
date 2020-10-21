@@ -4,7 +4,7 @@
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
   <!-- เริ่ม slide show รูปด้านบน -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
-    <!-- Slider main container -->
+    <!-- Slider main container {{หน้าไหนไม่มีสไลด์ลบโค้ดด้านในนี้ให้หมด}} -->
     <div class="swiper-container w-100">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -24,12 +24,14 @@
           <i class="fa fa-angle-right" aria-hidden="true"></i>
         </div>
     </div>
+    <!-- {{ลบถึงตรงนี้เลยเน้อ}} -->
   </section>
 
   <!-- slide show ลายพู่กันด้านล่าง -->
   <div class="content-bg">
     <img class="img-fluid" src="./img/content-bg.png">
   </div>
+  <!-- สิ้นสุด slide show รูปด้านบน -->
 
   <!-- เนื้อหา -->
   <section id="content" style="z-index: 20 !important;">
