@@ -180,6 +180,7 @@ none {
   font-family: 'Kanit-ExtraLight', sans-serif;
 }
 .round-button {
+  text-align: center;
   border: none;
   background: none;
   position: absolute;

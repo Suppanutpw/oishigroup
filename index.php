@@ -97,9 +97,9 @@
 
       <div class="header-part">
         <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
-        <button class="round-button">
+        <a class="round-button" href="/news_activity.php">
           <i class="fas fa-plus"></i>
-        </button>
+        </a>
       </div>
       <div id="new-and-activity" class="owl-carousel owl-theme owl-new-activity"></div>
 
@@ -107,7 +107,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="header-part">
-            <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
+            <h1>OISHI <span>SOCIAL<span> <i>RESPONSIBILITY</i></h1>
             <button class="round-button">
               <i class="fas fa-plus"></i>
             </button>
