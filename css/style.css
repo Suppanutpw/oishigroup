@@ -11,6 +11,9 @@ a:hover {
   color: #666;
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
 
 /* Header */
 #top-red-bar {
@@ -160,6 +163,10 @@ a:hover {
   width: 30px;
   height: 30px;
   line-height: 30px;
+  transition: all .3s;
+}
+.round-button i:hover {
+  background-color: #333;
 }
 
 .index-content h1{
@@ -245,6 +252,33 @@ h4.card-title {
   .index-content {
     margin-bottom: 25px;
   }
+}
+
+/* silde col-6 */
+.silde-middle h4 {
+  font-family: 'Kanit-Light', sans-serif;
+  font-size: 18px;
+  line-height: 1.5 !important;
+  color: #464646;
+  margin: 0;
+}
+.silde-middle p {
+  font-family: 'Kanit-Light', sans-serif;
+  font-size: 14px;
+  color: red;
+  margin: 0;
+}
+.silde-middle a {
+  text-align: right;
+  font-family: 'Kanit-Light', sans-serif;
+  font-size: 18px;
+  color: red;
+}
+.silde-middle a:hover {
+  color: #333;
+}
+.silde-middle .card-body div {
+  text-align: right;
 }
 
 /* footer */
@@ -348,6 +382,14 @@ h4.card-title {
 }
 .owl-carousel:hover .owl-prev {
   left: -75px;
+  opacity: 1;
+}
+.owl-dot span {
+  opacity: 0.5;
+  margin: 5px !important;
+  background-color: red !important;
+}
+.active span, .owl-dot span:hover {
   opacity: 1;
 }
 

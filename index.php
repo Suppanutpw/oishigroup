@@ -112,6 +112,7 @@
               <i class="fas fa-plus"></i>
             </button>
           </div>
+          <div id="social" class="owl-carousel owl-theme owl-social"></div>
         </div>
         <div class="col-md-6">
           <div class="header-part">
@@ -120,6 +121,7 @@
               <i class="fas fa-plus"></i>
             </button>
           </div>
+          <div id="award" class="owl-carousel owl-theme owl-award"></div>
         </div>
       </div>
 
@@ -127,53 +129,96 @@
   </section>
 
   <script>
-    let request = new XMLHttpRequest();
-    var new_and_activity;
-    request.onreadystatechange = function () {
-      if (request.readyState == 4 && request.status == 200) {
-        showNewAndActivity(JSON.parse(request.responseText));
-      }
-    };
-    request.open("GET", "json/news_activity.json", true);
-    request.send();
 
-    // generate json
-    showNewAndActivity = (data, op="") => {
-      for (var i = 0; i < data.length; i++) {
-        // trim String
-        var content = data[i].content.substr(0, 165);
-        content = content.substr(0, Math.min(content.length, content.lastIndexOf(" ")))
+    function showSildeJsonBig(jsonURL, putID, owlClass) {
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
 
-        op += `<div class="card item"><img class="card-img-top" src="${data[i].img}">`;
-        op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-        op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
-      }
-      $('#new-and-activity').html(op);
-      var new_and_activity = $('.owl-new-activity').owlCarousel({
-          loop:false,
-          margin:10,
-          nav:true,
-          dots: false,
-          responsive:{
-              0:{
-                  items:2
-              },
-              992:{
-                  items:3
-              }
+          var data = JSON.parse(request.responseText), op = "";
+
+          for (var i = 0; i < data.length; i++) {
+            // trim String and generate html content
+            var content = data[i].content.substr(0, 165);
+            content = content.substr(0, Math.min(content.length, content.lastIndexOf(" ")))
+
+            op += `<div class="card item"><img class="card-img-top" src="${data[i].img}">`;
+            op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
+            op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
           }
-      });
-      $('.owl-prev').html("");
-      $('.owl-next').html("");
+          $(putID).html(op);
+          // create and setting owl
+          $(owlClass).owlCarousel({
+              loop:false,
+              margin:10,
+              nav:true,
+              dots:false,
+              autoplay:true,
+              autoplayTimeout:10000,
+              responsive:{
+                  0:{
+                      items:2
+                  },
+                  992:{
+                      items:3
+                  }
+              }
+          });
+          $('.owl-prev').html("");
+          $('.owl-next').html("");
+        }
+      };
+      request.open("GET", jsonURL, true);
+      request.send();
+    }
+
+    function showSildeJsonMiddle(jsonURL, putID, owlClass) {
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+
+          var data = JSON.parse(request.responseText), op = "";
+
+          for (var i = 0; i < Math.min(10, data.length); i++) {
+            // generate html content
+            op += `<div class="card silde-middle item"><img class="card-img-top" src="${data[i].img}">`;
+            op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
+            op += `<p class="card-text">${data[i].date}</p><div><a href="#"><i class="fas fa-plus" aria-hidden="true"></i> รายละเอียด</a></div></div></div>`;
+          }
+          $(putID).html(op);
+          // create and setting owl
+          $(owlClass).owlCarousel({
+              loop:false,
+              margin:10,
+              nav:false,
+              dots:true,
+              autoplay:true,
+              autoplayTimeout:10000,
+              responsive:{
+                  0:{
+                      items:1
+                  }
+              }
+          });
+          $('.owl-prev').html("");
+          $('.owl-next').html("");
+        }
+      };
+      request.open("GET", jsonURL, true);
+      request.send();
     }
 
     $(window).resize(function () {
       if ($(window).width() >= 992) {
         $(".line-right").attr("src", "img/home-brand-line-right.png");
-       } else {
+      } else {
         $(".line-right").attr("src", "img/home-brand-line-left.png");
       }
     });
+
+    showSildeJsonBig("json/news_activity.json", '#new-and-activity', '.owl-new-activity');
+    showSildeJsonMiddle("json/social_responsibility.json", '#social', '.owl-social');
+    showSildeJsonMiddle("json/awards.json", '#award', '.owl-award');
   </script>
 
 <?php
