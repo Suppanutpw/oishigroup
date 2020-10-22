@@ -129,6 +129,7 @@ a:hover {
 }
 
 .header-part {
+  position: relative;
   padding: 50px 0 30px 0;
 }
 .header-part h1 {
@@ -144,6 +145,21 @@ a:hover {
   color: #333;
   font-style: normal;
   font-family: 'Kanit-ExtraLight', sans-serif;
+}
+.round-button {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: 55.5px;
+}
+.round-button i {
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 
 .index-content h1{

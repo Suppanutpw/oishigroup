@@ -97,9 +97,30 @@
 
       <div class="header-part">
         <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
+        <button class="round-button">
+          <i class="fas fa-plus"></i>
+        </button>
       </div>
-      <div id="new-and-activity" class="owl-carousel owl-theme">
+      <div id="new-and-activity" class="owl-carousel owl-theme owl-new-activity"></div>
 
+      <!-- slide 2 ฝั่ง -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-part">
+            <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
+            <button class="round-button">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="header-part">
+            <h1>OISHI <span>AWARD<span></h1>
+            <button class="round-button">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -128,7 +149,7 @@
         op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
       }
       $('#new-and-activity').html(op);
-      var new_and_activity = $('.owl-carousel').owlCarousel({
+      var new_and_activity = $('.owl-new-activity').owlCarousel({
           loop:false,
           margin:10,
           nav:true,
