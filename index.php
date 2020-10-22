@@ -125,10 +125,33 @@
         </div>
       </div>
 
-    </div>
+    </div> <!-- container clearfix -->
   </section>
 
+  <!-- Magnific Popup -->
+  <div id="outer-pop"></div>
+
   <script>
+    $(document).on('click', '.inline-popups', function(){
+      $("#outer-pop").html(op=""); // clear lastest content
+      try {
+        data = JSON.parse(this.getElementsByTagName("none")[0].innerHTML);
+        op += `<div id="popups" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`;
+        op += `<img class="img-fluid" src="${data.img}"><div class="mt-4">`;
+        op += `<h1>${data.title}</h1><p>${data.content}</p></div></div></div>`;
+        $("#outer-pop").html(op);
+      } catch (e) {
+        console.error(e);
+      }
+
+      $.magnificPopup.open({
+          items: {
+              src: $("#popups"),
+          },
+          type: 'inline',
+          mainClass: 'mfp-fade'
+      });
+    });
 
     function showSildeJsonBig(jsonURL, putID, owlClass) {
       var request = new XMLHttpRequest();
@@ -144,7 +167,7 @@
 
             op += `<div class="card item"><img class="card-img-top" src="${data[i].img}">`;
             op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-            op += `<p class="card-text">${content}</p><a href="#" class="card-button float-right">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
+            op += `<p class="card-text">${content}</p><a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div>`;
           }
           $(putID).html(op);
           // create and setting owl
@@ -181,9 +204,9 @@
 
           for (var i = 0; i < Math.min(10, data.length); i++) {
             // generate html content
-            op += `<div class="card silde-middle item"><img class="card-img-top" src="${data[i].img}">`;
+            op += `<div class="card silde-middle item"><div class="inline-popups"><none>${JSON.stringify(data[i])}</none><img class="card-img-top" src="${data[i].img}"></div>`;
             op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-            op += `<p class="card-text">${data[i].date}</p><div><a href="#"><i class="fas fa-plus" aria-hidden="true"></i> รายละเอียด</a></div></div></div>`;
+            op += `<p class="card-text">${data[i].date}</p><div><a class="inline-popups" href="#popups"><none>${JSON.stringify(data[i])}</none><i class="fas fa-plus" aria-hidden="true"></i> รายละเอียด</a></div></div></div>`;
           }
           $(putID).html(op);
           // create and setting owl
