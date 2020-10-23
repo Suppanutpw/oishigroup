@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php
-    require('metalink.php');
-  ?>
+  <?php require('metalink.php'); ?>
   <style>
 a {
   color: #333;
@@ -21,9 +19,8 @@ center {
   </style>
 </head>
 <body>
-  <?php
-    require('header.php');
-  ?>
+
+  <?php require('header.php'); ?>
 
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
   <img class="img-fluid" src="./img/banner.jpg">
@@ -66,6 +63,4 @@ center {
       </div>
   </section>
 
-<?php
-  require('footer.php');
-?>
+<?php require('footer.php'); ?>

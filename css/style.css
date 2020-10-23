@@ -505,6 +505,7 @@ h4.card-title {
   color: #fff !important;
   background-color: red !important;
 }
+.mfp-close:active { top: 0;}
 
 /* overlay at start */
 .mfp-fade.mfp-bg {

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php
-    require('metalink.php');
-  ?>
+  <?php require('metalink.php'); ?>
   <!-- เพิ่มเติม stylesheet ได้ตรงนี้เน้อ ต้องเพิ่มด้านล่าง require เท่านั้น!! ไม่ต้องเพิ่ม query boostrap ซ้ำนะ ดูใน metalink.php เลยว่าเราใส่อะไรไว้แล้วบ้าง  -->
 </head>
 <body>
-
-<?php
-  // แถบบาร์ด้านบน
-  require('header.php');
-?>
+  <!-- แถบบาร์ด้านบน -->
+  <?php require('header.php'); ?>
 
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
   <!-- เริ่ม slide show รูปด้านบน {อย่าลบ section เด็ดขาด!!!} -->
@@ -51,7 +46,6 @@
       <h2 class="text-center">เนื้อหา อยู่นี้จ้า</h2>
     </div>
   </section>
-<?php
-  // ไม่ต้องมี tag ปิด body กับ html นะเออ
-  require('footer.php');
-?>
+
+<!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
+<?php require('footer.php'); ?>
