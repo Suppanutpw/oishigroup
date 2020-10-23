@@ -1,6 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?php
+    require('metalink.php');
+  ?>
+  <!-- เพิ่มเติม stylesheet ได้ตรงนี้เน้อ ต้องเพิ่มด้านล่าง require เท่านั้น!! ไม่ต้องเพิ่ม query boostrap ซ้ำนะ ดูใน metalink.php เลยว่าเราใส่อะไรไว้แล้วบ้าง  -->
+</head>
+<body>
+
 <?php
+  // แถบบาร์ด้านบน
   require('header.php');
 ?>
+
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
   <!-- เริ่ม slide show รูปด้านบน -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
@@ -40,5 +52,6 @@
     </div>
   </section>
 <?php
+  // ไม่ต้องมี tag ปิด body กับ html นะเออ
   require('footer.php');
 ?>

@@ -1,6 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?php
+    require('metalink.php');
+  ?>
+</head>
+<body>
+
 <?php
   require('header.php');
 ?>
+
   <!-- เริ่ม slide show รูปด้านบน -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
     <!-- Slider main container -->

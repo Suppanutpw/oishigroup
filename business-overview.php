@@ -1,5 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?php
+    require('metalink.php');
+  ?>
+</head>
+<body>
+
 <?php
-    require('header.php');
+  require('header.php');
 ?>
 
     <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
@@ -31,18 +40,17 @@
                             <a class="nav-link" href="#">สารจากประธานกรรมการ</a>
                         </li>
                         <img src="./img/line.png" alt="">
-                    </ul>       
+                    </ul>
                 </div>
                 <div class="col-md-9">
                     <h1>ภาพรวมธุรกิจของบริษัท</h1><br><br>
                     <h1>ภาพรวมการประกอบธุรกิจของบริษัทและบริษัทย่อย</h1>
                     <h4>บริษัทและบริษัทย่อย ประกอบธุรกิจหลัก 2 ประเภท ได้แก่</h4>
                 </div>
-        </div>   
+        </div>
     </div>
   </section>
 
-    
 <?php
     require('footer.php');
 ?>
