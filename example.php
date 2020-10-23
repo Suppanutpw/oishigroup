@@ -14,7 +14,7 @@
 ?>
 
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
-  <!-- เริ่ม slide show รูปด้านบน -->
+  <!-- เริ่ม slide show รูปด้านบน {อย่าลบ section เด็ดขาด!!!} -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
     <!-- Slider main container {{หน้าไหนไม่มีสไลด์ลบโค้ดด้านในนี้ให้หมด}} -->
     <div class="swiper-container w-100">
@@ -45,7 +45,7 @@
   </div>
   <!-- สิ้นสุด slide show รูปด้านบน -->
 
-  <!-- เนื้อหา -->
+  <!-- เนื้อหา {อย่าลบ section เด็ดขาด!!!} -->
   <section id="content" style="z-index: 20 !important;">
     <div class="container clearfix">
       <h2 class="text-center">เนื้อหา อยู่นี้จ้า</h2>
