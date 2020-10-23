@@ -8,13 +8,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-      a {
+a {
   color: #333;
   text-decoration: none;
 }
 a:hover {
   color: red;
   text-decoration: none;
+}
+center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
     </style>
 </head>
@@ -54,9 +59,10 @@ a:hover {
               <img src="./img/line.png">
             </ul>
           </div>
-          <div class="col-md-9">
-            <h1>โครงสร้างกลุ่มบริษัท</h1><br>
-            <img class="img-fluid" src="group-structure-2019-th.jpg">
+          <div class="col-md-9 text-center">
+            <h1 style="margin-left: -50%">โครงสร้างกลุ่มบริษัท</h1><br>
+            <img class="img-fluid" src="./img/group-structure-2019-th.jpg" style="margin-bottom: 20px">
+            <h6 clas>Click on picture to enlarge</h6>
           </div>
         </div>
       </div>
