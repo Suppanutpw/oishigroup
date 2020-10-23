@@ -18,6 +18,13 @@ none {
   display: none;
 }
 
+/* style for selected */
+::selection {
+  background: red;
+  color: #FFF;
+  text-shadow: none;
+}
+
 /* back to top button */
 .float{
   z-index: 199;
