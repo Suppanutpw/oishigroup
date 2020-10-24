@@ -24,6 +24,7 @@
         height:90px;
         line-height: 80px;
         background-position-x: center;
+        color:white;
     }
 
     .bavtag{
@@ -37,10 +38,21 @@
         font-size: 20px;
         line-height: 80px;
         background-position-x: center;
+        color:white;
     }
 
     #selected1{
         color:red;
+    }
+
+    img{
+        max-width: 100%;
+        vertical-align: middle;
+        box-sizing: inherit;
+    }
+
+    #bavarage{
+        display:none;
     }
     </style>
 </head>
@@ -71,14 +83,14 @@
                     <br>
                     <ul class="nav">
                         <li class="foodtag col-md-6" style="b">
-                            <a href="">ธุรกิจอาหาร</a>
+                            <a id="first" onclick="showFood()">ธุรกิจอาหาร</a>
                         </li>
                         <li class="bavtag col-md-6">
-                            <a href="">ธุรกิจเครื่องดื่ม</a>
+                            <a  id="second" onclick="showBav()">ธุรกิจเครื่องดื่ม</a>
                         </li>
                     </ul>
                     <br>
-                    <!--Brand-->
+                    <div id="food"><!--Brand-->
                     <h4>ธุรกิจร้านอาหารญี่ปุ่น มีทั้งหมด 10 แบรนด์ ดังนี้</h4><br>
                     <div class="row">
                         <div class="col-md-3">
@@ -212,13 +224,59 @@
                             <p>เส้นราเมนเหนียวนุ่ม ไม่ผสมวัตถุกันเสียและผงชูรส นำมา ผัดซอสสไตล์ญี่ปุ่น มีหลากหลายรสชาติ ได้แก่ หอยลายผัด น้ำพริกเผา ไก่เทอริยากิผัดซอสนาเบะ และ ยากิโซบะ เป็นต้นโดยในปีที่ผ่านมา บริษัทยังคงมุ่งเน้นการพัฒนานวัตกรรม ผลิตภัณฑ์ให้มีความหลากหลายทั้งในด้านรูปแบบ รสชาติ และบรรจุภัณฑ์ เพื่อตอบสนองความต้องการของผู้บริโภค กลุ่มเป้าหมายมากยิ่งขึ้น ได้แก่ เฟรนช์โทสต์แซนวิช ที่นำ ความนุ่มของขนมปังสูตรเฉพาะจากโออิชิ อีทโตะ มาชุบไข่ เนยและนม ก่อนนำไปอบจนหอม อีกทั้งยังมีความอร่อยจาก เบคอน เชดด้าชีส และมอสซาเรลลาชีส สำหรับปี 2563 บริษัทยังคงมุ่งเน้นการสร้างตราสินค้า โออิชิ อีทโตะ ให้เป็น ที่จดจำ และ ยังคงพัฒนานวัตกรรมสินค้าใหม่ในสไตล์ญี่ปุ่น ที่อร่อย แปลกใหม่ และยังดีต่อสุขภาพต่อไป</p>
                         </div>
                     </div>
-                    <!--End Brand-->
+                    </div><!--End Brand-->
+                    <div id="bavarage">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>ธุรกิจเครื่องดื่ม</h4>
+                            <p>บริษัทและบริษัทย่อยเป็นผู้ผลิตและจำหน่ายเครื่องดื่มรสชาติต่าง ๆ และมีบรรจุภัณฑ์ที่หลากหลายดังต่อไปนี้</p>
+                            <img src="./img/table.jpg" alt="">
+                        </div>
+                    </div>
+                    </div><!--End Bavarage-->
                 </div><!--End right colum-->
             </div><!--End Row-->
         </div><!--End Container-->
      </section>
+    <!--Fading Effect-->
+     <script>
+        $(document).ready(function(){
+            $("#second").click(function(){ 
+            $("#food").fadeOut("slow");
+            $("#bavarage").fadeIn(2000);
+            });
+        });
+
+        $(document).ready(function(){
+            $("#first").click(function(){ 
+            $("#bavarage").fadeOut("slow");
+            $("#food").fadeIn(2000);
+            });
+        });
+</script>
 
 
+<!--Prototype
+<script>
+        function showBav() {
+            var bav = document.getElementById("bavarage");
+            var food = document.getElementById("food");
 
+            bav.style.display = "block";
+            food.style.display = "none";
+            
+        }
+
+        function showFood() {
+            var bav = document.getElementById("bavarage");
+            var food = document.getElementById("food");
+
+            bav.style.display = "none";
+            food.style.display = "block";
+            
+        }
+</script>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <?php require('footer.php'); ?>
