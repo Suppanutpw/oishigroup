@@ -2,19 +2,19 @@
             <div class="col-md-3">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ภาพรวมธุรกิจของบริษัท</a>
+                            <a class="nav-link" href="business-overview.php" id="selected1">ภาพรวมธุรกิจของบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ประวัติความเป็นมาของบริษัท</a>
+                            <a class="nav-link" href="#" id="selected2">ประวัติความเป็นมาของบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">วิสสัยทัศน์และพันธกิจ</a>
+                            <a class="nav-link" href="vision-mission.php" id="selected3">วิสสัยทัศน์และพันธกิจ</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">สารจากประธานกรรมการ</a>
+                            <a class="nav-link" href="message-from-chairman.php" id="selected4">สารจากประธานกรรมการ</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
