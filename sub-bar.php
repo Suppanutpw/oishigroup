@@ -18,7 +18,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">โครงสร้างองค์กร</a>
+                            <a class="nav-link" href="organization-chart.php" id="selected5">โครงสร้างองค์กร</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
