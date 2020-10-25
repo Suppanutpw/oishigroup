@@ -60,7 +60,7 @@
         </div><!--End Container-->
      </section>
     <!--Popup-->
-     <div id="popup-point" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
+    <div id="popup-point" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
         <div class="popup-text-pic" >
             <img class="img-fluid" src="./img/organization-chart-2019-th.jpg">
         </div>
