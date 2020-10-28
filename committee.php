@@ -25,6 +25,10 @@ hr.red{
 }
 .title{
   color:gray;
+  font-size: 0.8em;
+}
+.col-4{
+  margin-top:5%;
 }
   </style>
 </head>
