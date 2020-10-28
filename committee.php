@@ -16,6 +16,16 @@ center {
     margin-left: auto;
     margin-right: auto;
 }
+.bust{
+    border-radius: 100%;
+    width: 100%;
+}
+hr.red{
+  background: red;
+}
+.title{
+  color:gray;
+}
   </style>
 </head>
 <body>
@@ -38,12 +48,44 @@ center {
           <?php require('sub-bar.php'); ?>
           <div class="col-md-9"><!--Right colum-->
                     <h1>คณะกรรมการบริษัท</h1><br>
+                    <!--row1-->
                     <div class="row">
-                        <div class="col-4 text-center">
-                            <img class="" src="">
-                            <p></p>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/prasit.jpg"><hr class="red">
+                            <h6>นายประสิทธิ์ โฆวิไลกูล</h6>
+                            <p class="title">ประธานกรรมการ<br>กรรมการอิสระ<br>กรรมการสรรหา<br>และกรรมการกำหนดค่าตอบแทน</p>
+                            
+                        </div>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/ueychai.jpg"><hr class="red">
+                            <h6>นายอวยชัย ตันทโอภาส</h6>
+                            <p class="title">ประธานกรรมการ<br>กรรมการอิสระ<br>กรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/vikrom.jpg"><hr class="red">
+                            <h6>นายวิกรม คุ้มไพโรจน์</h6>
+                            <p class="title">กรรมการอิสระ<br>ประธานกรรมการตรวจสอบ<br>ประธานกรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
                         </div>
                     </div>
+                    <!--row2-->
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/potjanee.jpg"><hr class="red">
+                            <h6>นางสาวพจนีย์ ธนวรานิช</h6>
+                            <p class="title">กรรมการอิสระ<br>กรรมการตรวจสอบ<br>ประธานกรรมการกำหนดค่าตอบแทน<br>และประธานกรรมการกำกับดูแลกิจการที่ดี</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/ueychai.jpg"><hr class="red">
+                            <h6>นายอวยชัย ตันทโอภาส</h6>
+                            <p class="title">ประธานกรรมการ<br>กรรมการอิสระ<br>กรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/vikrom.jpg"><hr class="red">
+                            <h6>นายวิกรม คุ้มไพโรจน์</h6>
+                            <p class="title">กรรมการอิสระ<br>ประธานกรรมการตรวจสอบ<br>ประธานกรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                        </div>
+                    </div>
+                    <!--row3-->
                 </div>
           </div>
       </div>
