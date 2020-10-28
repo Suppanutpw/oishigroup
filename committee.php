@@ -75,17 +75,29 @@ hr.red{
                             <p class="title">กรรมการอิสระ<br>กรรมการตรวจสอบ<br>ประธานกรรมการกำหนดค่าตอบแทน<br>และประธานกรรมการกำกับดูแลกิจการที่ดี</p>
                         </div>
                         <div class="col-4">
-                            <img class="bust mx-auto d-block" src="./img/ueychai.jpg"><hr class="red">
-                            <h6>นายอวยชัย ตันทโอภาส</h6>
-                            <p class="title">ประธานกรรมการ<br>กรรมการอิสระ<br>กรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                            <img class="bust mx-auto d-block" src="./img/chai.jpg"><hr class="red">
+                            <h6>นายชัย จรุงธนาภิบาล</h6>
+                            <p class="title">กรรมการอิสระ<br>กรรมการตรวจสอบ<br>ประธานกรรมการบริหารความยั่งยืนและความเสี่ยง<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
                         </div>
                         <div class="col-4">
-                            <img class="bust mx-auto d-block" src="./img/vikrom.jpg"><hr class="red">
-                            <h6>นายวิกรม คุ้มไพโรจน์</h6>
-                            <p class="title">กรรมการอิสระ<br>ประธานกรรมการตรวจสอบ<br>ประธานกรรมการสรรหา<br>กรรมการกำหนดค่าตอบแทน<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                            <img class="bust mx-auto d-block" src="./img/sithichai.jpg"><hr class="red">
+                            <h6>นายสิทธิชัย ชัยเกรียงไกร</h6>
+                            <p class="title">กรรมการ<br>รองประธานกรรมการบริหาร คนที่ 1<br>และกรรมการกำหนดค่าตอบแทน</p>
                         </div>
                     </div>
                     <!--row3-->
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/pisanu.jpg"><hr class="red">
+                            <h6>นายพิษณุ วิเชียรสรรค์</h6>
+                            <p class="title">กรรมการ<br>กรรมการบริหาร<br>และรองประธานกรรมการบริหารความยั่งยืนและความเสี่ยง</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="bust mx-auto d-block" src="./img/nongnuch.jpg"><hr class="red">
+                            <h6>นางนงนุช บูรณะเศรษฐกุล</h6>
+                            <p class="title">กรรมการ<br>กรรมการผู้จัดการ<br>กรรมการบริหาร<br>กรรมการบริหารความยั่งยืนและความเสี่ยง<br>และกรรมการกำกับดูแลกิจการที่ดี</p>
+                        </div>
+                    </div>
                 </div>
           </div>
       </div>
