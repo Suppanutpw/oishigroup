@@ -49,6 +49,20 @@
         width:100%
     }
   </style>
+  <script>
+    let requestURL = ''; 
+        let request = new XMLHttpRequest(); 
+        request.onreadystatechange = function () { 
+            if (request.readyState == 4 && request.status == 200) {             
+                dataReportStatus(JSON.parse(request.responseText));            
+            } }; 
+        request.open("GET", requestURL, true); 
+        request.send(); 
+        
+        function dataReportStatus(data) {
+
+        }
+  </script>
 </head>
 <body>
   <!-- แถบบาร์ด้านบน -->
@@ -393,6 +407,14 @@
                             </div>
                         </div>
                     </div>
+                    <?php
+                    $jsonobj = '.\json\export.json';
+
+                    $data = json_decode($jsonobj, true);
+
+                    echo '<div class="col-md-3"><div class="product-block"><a href=""><div class="product-img-block"><img src='
+                    
+                    ?>
                     <div id="black-tea"></div>
                     <div id="chakulza"></div>
                     <div id="jubjai"></div>
