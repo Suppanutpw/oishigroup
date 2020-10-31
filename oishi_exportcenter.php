@@ -408,12 +408,9 @@
                         </div>
                     </div>
                     <?php
-                    $jsonobj = '.\json\export.json';
-
-                    $data = json_decode($jsonobj, true);
-
-                    echo '<div class="col-md-3"><div class="product-block"><a href=""><div class="product-img-block"><img src='
-                    
+                    $jsonobj = '\json\export.json';
+                    $data = json_decode($jsonobj);
+                    echo $data[0]->title
                     ?>
                     <div id="black-tea"></div>
                     <div id="chakulza"></div>

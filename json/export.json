@@ -1,7 +1,8 @@
 [
-    {"img": "https://www.oishigroup.com/upload_file/beverage/200715111240_Update%20Bev%20Export%20WEB-01.png",
-     "title":"OISHI GREEN TEA HONEY LEMON",
-     "volume":"(180 ML)"},
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715111240_Update%20Bev%20Export%20WEB-01.png",
+        "title":"OISHI GREEN TEA HONEY LEMON",
+        "volume":"(180 ML)"},
     {"img": "https://www.oishigroup.com/upload_file/beverage/200715111309_Update%20Bev%20Export%20WEB-02.png",
      "title":"OISHI GREEN TEA ORIGINAL",
      "volume":"(180 ML)"},
