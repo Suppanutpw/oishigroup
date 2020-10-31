@@ -31,6 +31,19 @@
       });
     });
   </script>
+  <style>
+    li{
+      width:25%;
+    }
+    .nav-img{
+      width:25%;
+      text-align:center;
+    }
+    #btn1, #btn2, #btn3, #btn4{
+      width: 100%;
+      
+    }
+  </style>
 </head>
 <body>
   <!-- แถบบาร์ด้านบน -->
@@ -76,38 +89,43 @@
 
   <!-- เนื้อหา {อย่าลบ section เด็ดขาด!!!} -->
   <section id="content" style="z-index: 20 !important;">
-    <div class="container clearfix">
-      <h2 class="text-center" style="color:red">OISHI <span style="color:lightgray;padding-right:5px">BRAND</span></h2>
+    <div class="container clearfix" style="padding-bottom: 30px">
+      <h2 class="text-center" style="color:red;">OISHI <span style="color:lightgray;padding-right:5px">BRAND</span></h2>
     </div>
     <div class="container clearfix">
-        <div id="nav-bar">
-            <ul class="horizontal">
-                <li></li>
-            </ul>
-        </div>
-        <div id="beverage" style="display">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-        </div>
-        <div id="eato" style="display:none">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-        </div>
-        <div id="restaurant" style="display:none">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-        </div>
-        <div id="delivery" style="display:none">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+        <div id="tabs">
+          <ul class="nav nav-bar">
+              <li style="border-bottom:solid 1px; margin-bottom:10px"><button id="btn1" style="background-color:#ffffff00; border:none"><img class="nav-img" src="/img/icon-beverage.png">OISHI BEVERAGE</button></li>
+              <li><img class="nav-img" src="/img/icon-eato.png" alt=""><a id="btn2">OISHI EATO</a></li>
+              <li><img class="nav-img" src="/img/icon-restaurant.png" alt=""><a id="btn3">OISHI RESTAURANT</a></li>
+              <li><img class="nav-img" src="/img/icon-delivery.png" alt=""><a id="btn4">OISHI DELIVERY</a></li>
+          </ul>
+          <div class="tab-container">
+            <div id="beverage" style="display">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+            </div>
+            <div id="eato" style="display:none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+            </div>
+            <div id="restaurant" style="display:none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+            </div>
+            <div id="delivery" style="display:none">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+            </div>
+          </div>
         </div>
     </div>
   </section>
