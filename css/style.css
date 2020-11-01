@@ -547,3 +547,6 @@ h4.card-title {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
+p.normal {
+  font-weight: normal;
+}
