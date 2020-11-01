@@ -198,50 +198,50 @@ h6.accolade{
       });
     });
 
-	$(document).on('click', '#popup-button2', function(){ // .popup-button คือ class ที่
+	$(document).on('click', '#popup-button2', function(){ 
       $.magnificPopup.open({
           items: {
-              src: $("#popup-point2"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
+              src: $("#popup-point2"), // 
           },
           type: 'inline',
           mainClass: 'mfp-fade',
       });
     });
   
-    $(document).on('click', '#popup-button3', function(){ // .popup-button คือ class ที่
+    $(document).on('click', '#popup-button3', function(){ 
       $.magnificPopup.open({
           items: {
-              src: $("#popup-point3"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
+              src: $("#popup-point3"), // 
           },
           type: 'inline',
           mainClass: 'mfp-fade',
       });
     });
 
-    $(document).on('click', '#popup-button4', function(){ // .popup-button คือ class ที่
+    $(document).on('click', '#popup-button4', function(){ 
       $.magnificPopup.open({
           items: {
-              src: $("#popup-point4"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
+              src: $("#popup-point4"), // 
           },
           type: 'inline',
           mainClass: 'mfp-fade',
       });
     });
 
-    $(document).on('click', '#popup-button5', function(){ // .popup-button คือ class ที่
+    $(document).on('click', '#popup-button5', function(){ 
       $.magnificPopup.open({
           items: {
-              src: $("#popup-point5"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
+              src: $("#popup-point5"), // 
           },
           type: 'inline',
           mainClass: 'mfp-fade',
       });
     });
 
-    $(document).on('click', '#popup-button6', function(){ // .popup-button คือ class ที่
+    $(document).on('click', '#popup-button6', function(){ 
       $.magnificPopup.open({
           items: {
-              src: $("#popup-point6"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
+              src: $("#popup-point6"), // 
           },
           type: 'inline',
           mainClass: 'mfp-fade',
