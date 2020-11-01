@@ -2,23 +2,31 @@
     {
         "img": "https://www.oishigroup.com/upload_file/beverage/200715111240_Update%20Bev%20Export%20WEB-01.png",
         "title":"OISHI GREEN TEA HONEY LEMON",
+        "volume":"(180 ML)"
+    },
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715111309_Update%20Bev%20Export%20WEB-02.png",
+        "title":"OISHI GREEN TEA ORIGINAL",
+        "volume":"(180 ML)"
+    },
+    {
+         "img": "https://www.oishigroup.com/upload_file/beverage/200715111358_Update%20Bev%20Export%20WEB-03.png",
+        "title":"OISHI GREEN TEA GENMAI",
         "volume":"(180 ML)"},
-    {"img": "https://www.oishigroup.com/upload_file/beverage/200715111309_Update%20Bev%20Export%20WEB-02.png",
-     "title":"OISHI GREEN TEA ORIGINAL",
-     "volume":"(180 ML)"},
-     {"img": "https://www.oishigroup.com/upload_file/beverage/200715111309_Update%20Bev%20Export%20WEB-03.png",
-     "title":"OISHI GREEN TEA GENMAI",
-     "volume":"(180 ML)"},
-     {"img": "https://www.oishigroup.com/upload_file/beverage/200715111425_Update%20Bev%20Export%20WEB-04.png",
-     "title":"OISHI GREEN TEA KYOHO GRAPE",
-     "volume":"(180 ML)"},
-     {"img": "https://www.oishigroup.com/upload_file/beverage/200715155755_Update%20Bev%20Export%20WEB-11.png",
-     "title":"OISHI GREEN TEA HONEY LEMON",
-     "volume":"(350 ML)"},
-     {"img": "https://www.oishigroup.com/upload_file/beverage/200715155837_Update%20Bev%20Export%20WEB-12.png",
-     "title":"OISHI GREEN TEA ORIGINAL",
-     "volume":"(350 ML)"},
-     {"img": "https://www.oishigroup.com/upload_file/beverage/200715160004_Update%20Bev%20Export%20WEB-13.png",
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715111425_Update%20Bev%20Export%20WEB-04.png",
+        "title":"OISHI GREEN TEA KYOHO GRAPE",
+        "volume":"(180 ML)"},
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715155755_Update%20Bev%20Export%20WEB-11.png",
+        "title":"OISHI GREEN TEA HONEY LEMON",
+        "volume":"(350 ML)"},
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715155837_Update%20Bev%20Export%20WEB-12.png",
+        "title":"OISHI GREEN TEA ORIGINAL",
+        "volume":"(350 ML)"},
+    {
+        "img": "https://www.oishigroup.com/upload_file/beverage/200715160004_Update%20Bev%20Export%20WEB-13.png",
      "title":"OISHI GREEN TEA GENMAI",
      "volume":"(350 ML)"},
      {"img": "https://www.oishigroup.com/upload_file/beverage/OISHI_Beverage_Export/export_greentea_watermelon.png",
@@ -36,7 +44,7 @@
      {"img": "https://www.oishigroup.com/upload_file/beverage/200720104748_Update%20Bev%20Export%20WEB-08.png",
      "title":"OISHI GREEN TEA GENMAI",
      "volume":"(380 ML)"},
-     {"img": "https://www.oishigroup.com/export_center.php#myModal61",
+     {"img": "https://www.oishigroup.com/upload_file/beverage/200720104859_Update%20Bev%20Export%20WEB-09.png",
      "title":"OISHI GREEN TEA KYOHO GRAPE",
      "volume":"(380 ML)"},
      {"img": "https://www.oishigroup.com/upload_file/beverage/200716101014_Update%20Bev%20Export%20WEB-14.png",
