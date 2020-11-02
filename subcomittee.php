@@ -333,6 +333,6 @@
             </div>
         </div>
     </secion>
-    
+    <?php require('footer.php'); ?>  
 </body>
 </html>
