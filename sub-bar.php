@@ -42,8 +42,40 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">การกำกับดูแลกิจการที่ดี</a>
+                            <a class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</a>
+                            <div id="box" style="display:none; padding: 0 0 0 2rem;">
+                                <a href="">การกำกับดูแลกิจการที่ดี</a><br>
+                                <a href="">จรรยาบรรณธุรกิจ</a><br>
+                                <a href="">ข้อบังคับบริษัท</a><br>
+                                <a href="">หนังสือบริคณห์สนธิ</a><br>
+                                <a href="">หนังสือรับรองบริษัท</a><br>
+                                <a href="">กฏบัตรคณะกรรมการ</a><br>
+                                <a href="">รายงานการถือหุ้นของคณะกรรมการและผู้บริหาร</a><br>
+                                <a href="">ระเบียบการรับเรื่องร้องเรียนหรือเบาะแสและการให้ความคุ้มครอง</a><br>
+                                <a href="">ปัจจัยความเสี่ยง</a><br>
+                                <a href="">นโยบายการต่อต้านทุจริตคอร์รัปชั่น</a><br>
+                            </div>
+                            
                         </li>
                         <img src="./img/line.png" alt="">
                     </ul>
+                    
                 </div>
+
+<script>
+    function appear() {
+
+        var bar = document.getElementById("bar");
+        var box = document.getElementById("box")
+        
+        if (bar.innerHTML === "การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+"){
+            box.style.display = "block";
+            bar.innerHTML = "การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-";
+        }
+        else {
+            bar.innerHTML = "การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+"
+            box.style.display = "none";
+        }
+        
+    }
+</script>
