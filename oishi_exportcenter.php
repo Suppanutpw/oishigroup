@@ -11,6 +11,11 @@
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
                 $("#gold").fadeOut(0);
+                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "color", "black");
+                $("#btn1").css("border-bottom", "2px solid rgb(179, 0, 0)");
+                $("#btn1").css("color", "red")
+                
 
             });
             $("#btn2").click(function(){
@@ -19,7 +24,10 @@
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
                 $("#gold").fadeOut(0);
-                
+                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "color", "black");
+                $("#btn2").css("border-bottom", "2px solid rgb(179, 0, 0)");
+                $("#btn2").css("color", "red")
                    
             });
             $("#btn3").click(function(){
@@ -28,6 +36,10 @@
                 $("#chakulza").fadeIn(1000);
                 $("#jubjai").fadeOut(0);
                 $("#gold").fadeOut(0);
+                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "color", "black");
+                $("#btn3").css("border-bottom", "2px solid rgb(179, 0, 0)");
+                $("#btn3").css("color", "red")
         
             });
             $("#btn4").click(function(){
@@ -36,6 +48,10 @@
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeIn(1000);
                 $("#gold").fadeOut(0);
+                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "color", "black");
+                $("#btn4").css("border-bottom", "2px solid rgb(179, 0, 0)");
+                $("#btn4").css("color", "red")
                 
             });
             $("#btn5").click(function(){
@@ -44,6 +60,10 @@
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
                 $("#gold").fadeIn(1000);
+                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "color", "black");
+                $("#btn5").css("border-bottom", "2px solid rgb(179, 0, 0)");
+                $("#btn5").css("color", "red")
                 
             });
         });
@@ -65,7 +85,10 @@
         background-color:#ffffff00;
         border:none;
         border-bottom:solid 2px gray;
-        color:gray
+        color:black
+    }
+    .nav-btn:hover{
+        color:red
     }
     .nav-img{
         width:25%;
@@ -92,6 +115,9 @@
     }
     .product-img{
         width:100%
+    }
+    .inline-popups{
+        float: left !important;
     }
   </style>
   
@@ -153,7 +179,9 @@
                     <div id="black-tea" style="display:none"></div>
                     <div id="chakulza" style="display:none"></div>
                     <div id="jubjai" style="display:none"></div>
-                    <div id="gold" style="display:none"></div>
+                    <div id="gold" style="display:none">
+                        <a class="inline-popups card-button float-right" href="#popups">รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,9 +214,9 @@
             }
             display2 += `<div class="col-md-3"><div class="product-block"><a href="" id="blacktea-btn0"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI BLACK TEA LEMON<br>(500 ML)</h2></div></a></div></div>`
-            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="chakulza-btn0"><div class="product-img-block"><img src="./img/export-product/chakulza1.png" class="product-img">
+            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="chakulza-btn0"><div class="product-img-block"><img src="./img/export-product/chakulza1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI CHAKULZA HONEY LEMON<br>(440 ML)</h2></div></a></div></div>`
-            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="jubjai-btn0"><div class="product-img-block"><img src="./img/export-product/jubjai1.png" class="product-img">
+            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="jubjai-btn0"><div class="product-img-block"><img src="./img/export-product/jubjai1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">JUBJAI<br>(500 ML)</h2></div></a></div></div>`
             document.getElementById('gold').innerHTML += display1
             document.getElementById('black-tea').innerHTML += display2
