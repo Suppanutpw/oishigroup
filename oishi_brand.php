@@ -34,14 +34,34 @@
   <style>
     li{
       width:25%;
+      margin-bottom:10px
     }
     .nav-img{
-      width:25%;
+      width:100%;
       text-align:center;
     }
     #btn1, #btn2, #btn3, #btn4{
       width: 100%;
       
+    }
+    .nav-btn{
+        width:100%;
+        background-color:#ffffff00;
+        border:none;
+        border-bottom:solid 2px gray;
+        color:gray;
+        padding-left:15px;
+        padding-right:15px;
+        padding-bottom:15px
+        
+    }
+    .icon{
+      margin-right:10px;
+      float:left
+    }
+    .name{
+      margin-top:10px;
+      font-size:16px
     }
   </style>
 </head>
@@ -94,37 +114,45 @@
     </div>
     <div class="container clearfix">
         <div id="tabs">
-          <ul class="nav nav-bar">
-              <li style="border-bottom:solid 1px; margin-bottom:10px"><button id="btn1" style="background-color:#ffffff00; border:none"><img class="nav-img" src="/img/icon-beverage.png">OISHI BEVERAGE</button></li>
-              <li><img class="nav-img" src="/img/icon-eato.png" alt=""><a id="btn2">OISHI EATO</a></li>
-              <li><img class="nav-img" src="/img/icon-restaurant.png" alt=""><a id="btn3">OISHI RESTAURANT</a></li>
-              <li><img class="nav-img" src="/img/icon-delivery.png" alt=""><a id="btn4">OISHI DELIVERY</a></li>
+          <ul style="padding-bottom:50px" class="nav nav-bar">
+              <li>
+                <button class="nav-btn" id="btn1" style="border-bottom-color:rgb(179, 0, 0);color:red;">
+                  <div class="tab-menu">
+                    <div class="icon"><img class="nav-img" src="/img/icon-beverage.png"></div>
+                    <div class="name"><p>OISHI BEVERAGE</p></div>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="nav-btn" id="btn2">
+                  <div class="tab-menu">
+                    <div class="icon"><img class="nav-img" src="/img/icon-eato.png" alt=""></div>
+                    <div class="name"><p>OISHI EATO</p></div>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="nav-btn" id="btn3">
+                  <div class="tab-menu">
+                    <div class="icon"><img class="nav-img" src="/img/icon-restaurant.png" alt=""></div>
+                    <div class="name"><p>OISHI RESTAURANT</p></div>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="nav-btn" id="btn4">
+                <div class="tab-menu">
+                  <div class="icon"><img class="nav-img" src="/img/icon-delivery.png" alt=""></div>
+                  <div class="name"><p>OISHI DELIVERY</p></div>
+                </div>
+                </button>
+              </li>
           </ul>
           <div class="tab-container">
-            <div id="beverage" style="display">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            </div>
-            <div id="eato" style="display:none">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            </div>
-            <div id="restaurant" style="display:none">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            </div>
-            <div id="delivery" style="display:none">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-            </div>
+            <div id="beverage" style="display"></div>
+            <div id="eato" style="display:none"></div>
+            <div id="restaurant" style="display:none"></div>
+            <div id="delivery" style="display:none"></div>
           </div>
         </div>
     </div>
