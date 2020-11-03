@@ -6,7 +6,7 @@
   <script>
         $(document).ready(function(){
             $("#btn1").click(function(){
-                $("#greem-tea").fadeIn(1000);
+                $("#green-tea").fadeIn(1000);
                 $("#black-tea").fadeOut(0);
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
@@ -19,6 +19,7 @@
                 $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
                 $("#gold").fadeOut(0);
+                
                    
             });
             $("#btn3").click(function(){
@@ -32,17 +33,17 @@
             $("#btn4").click(function(){
                 $("#greem-tea").fadeOut(0);
                 $("#black-tea").fadeOut(0);
-                $("#chakulza").fadeIn(1000);
-                $("#jubjai").fadeOut(0);
+                $("#chakulza").fadeOut(0);
+                $("#jubjai").fadeIn(1000);
                 $("#gold").fadeOut(0);
                 
             });
             $("#btn5").click(function(){
                 $("#green-tea").fadeOut(0);
                 $("#black-tea").fadeOut(0);
-                $("#chakulza").fadeIn(1000);
+                $("#chakulza").fadeOut(0);
                 $("#jubjai").fadeOut(0);
-                $("#gold").fadeOut(0);
+                $("#gold").fadeIn(1000);
                 
             });
         });
@@ -148,17 +149,7 @@
                     <li><button class="nav-btn" id="btn5"><img class="nav-img" src="\img\icon-export-5.png"><div><p class="nav-name">โออิชิ โกลด์<br>OISHI GOLD</p></div></button></li>
                 </ul>
                 <div class="tabs-content" stlye="padding-top:20px">
-                    <div id="green-tea" style="display:none">
-                        <?php
-                        $url = file_get_contents('./json/export.json');
-                        $data = json_decode($url);
-                        for ($i=0 ; $i<18; $i++){
-                            echo '<div class="col-md-3"><div class="product-block"><a href="" id="greentea-btn'.$i.'"><div class="product-img-block"><img src="' .$data[$i]->img. '"class="product-img">
-                            </div><div class="product-title"><h2 style="font-size:14px;text-align:center">' . $data[$i]->title . '<br>' . $data[$i]->volume . '</h2></div></a></div></div>';
-                        };
-                    ?>
-                    </div>
-                    
+                    <div id="green-tea" style="display:"></div>
                     <div id="black-tea" style="display:none"></div>
                     <div id="chakulza" style="display:none"></div>
                     <div id="jubjai" style="display:none"></div>
@@ -179,25 +170,33 @@
         request.send(); 
         
         function dataReportStatus(data) { 
+            let display = ""
             let display1 = ""
             let display2 = ""
             let display3 = ""
             let display4 = ""
-            for (i=0; i<data.length; i++){
+            let decrease = 5
+            for (i=0; i<5; i++){
                 display1 += `<div class="col-md-3"><div class="product-block"><a href="" id="gold-btn${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
+                            </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
+            }
+            for (i=5; i<23; i++){
+                display += `<div class="col-md-3"><div class="product-block"><a href="" id="greentea-btn${i-decrease}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
             }
             display2 += `<div class="col-md-3"><div class="product-block"><a href="" id="blacktea-btn0"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI BLACK TEA LEMON<br>(500 ML)</h2></div></a></div></div>`
-            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="blacktea-btn0"><div class="product-img-block"><img src="./img/export-product/chakulza1.png" class="product-img">
+            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="chakulza-btn0"><div class="product-img-block"><img src="./img/export-product/chakulza1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI CHAKULZA HONEY LEMON<br>(440 ML)</h2></div></a></div></div>`
-            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="blacktea-btn0"><div class="product-img-block"><img src="./img/export-product/jubjai1.png" class="product-img">
+            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="jubjai-btn0"><div class="product-img-block"><img src="./img/export-product/jubjai1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">JUBJAI<br>(500 ML)</h2></div></a></div></div>`
             document.getElementById('gold').innerHTML += display1
             document.getElementById('black-tea').innerHTML += display2
             document.getElementById('chakulza').innerHTML += display3
             document.getElementById('jubjai').innerHTML += display4
+            document.getElementById('green-tea').innerHTML += display
         }
-    </script> 
+    </script>
+    
 <!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
 <?php require('footer.php'); ?>
