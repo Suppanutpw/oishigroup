@@ -44,7 +44,7 @@
       <div class="row index-content">
         <div class="col-md-4 img-and-link">
           <img class="img-fluid w-100" src="img/home-oishi-beverage.png">
-          <a href="https://www.oishidrink.com/" target="_blank">
+          <a href="#">
             <img src="img/enter-site-icon.png"> เข้าสู่เว็บไซต์
           </a>
         </div>
@@ -52,14 +52,14 @@
           <h1>ผลิตภัณฑ์เครื่องดื่ม</h1>
           <h2>OISHI BEVERAGE</h2>
           <img src="img/home-brand-line-left.png">
-          <p>โออิชิ เดลิเวอรี่ ถือกำเนิดขึ้นเพื่อเพิ่มความสะดวกสบายในการสั่งอาหารสไตล์ญี่ปุ่นให้ผู้บริโภคได้อร่อยกันถึงบ้าน ผ่าน <a href="https://www.oishidelivery.com" target="_blank">www.oishidelivery.com</a> และหมายเลขโทรศัพท์ <a href="tel:1773">1773</a> ซึ่งให้บริการครอบคลุมทั้งพื้นที่ในเขตกรุงเทพมหานคร ปริมณฑล และอีก 23 จังหวัด ทั่วประเทศ ตั้งแต่เวลา 10.00 - 22.00 น. พร้อมรับชำระค่าบริการทั้งในรูปแบบเงินสดและบัตรเครดิต</p>
+          <p>โออิชิ เดลิเวอรี่ ถือกำเนิดขึ้นเพื่อเพิ่มความสะดวกสบายในการสั่งอาหารสไตล์ญี่ปุ่นให้ผู้บริโภคได้อร่อยกันถึงบ้าน ผ่าน <a href="#">www.oishidelivery.com</a> และหมายเลขโทรศัพท์ <a href="tel:1773">1773</a> ซึ่งให้บริการครอบคลุมทั้งพื้นที่ในเขตกรุงเทพมหานคร ปริมณฑล และอีก 23 จังหวัด ทั่วประเทศ ตั้งแต่เวลา 10.00 - 22.00 น. พร้อมรับชำระค่าบริการทั้งในรูปแบบเงินสดและบัตรเครดิต</p>
         </div>
       </div>
 
       <div class="row index-content">
         <div class="col-md-4 order-lg-2 img-and-link">
           <img class="img-fluid w-100" src="img/home-oishi-restaurant.png">
-          <a href="https://www.oishifood.com/restaurant.php" target="_blank">
+          <a href="#">
             <img src="img/enter-site-icon.png"> เข้าสู่เว็บไซต์
           </a>
         </div>
@@ -74,7 +74,7 @@
       <div class="row index-content">
         <div class="col-md-4 img-and-link">
           <img class="img-fluid w-100" src="img/PackedFood-Homepage.png">
-          <a href="https://www.oishidrink.com/" target="_blank">
+          <a href="#">
             <img src="img/enter-site-icon.png"> เข้าสู่เว็บไซต์
           </a>
         </div>
@@ -89,7 +89,7 @@
       <div class="row index-content">
         <div class="col-md-4 order-lg-2 img-and-link">
           <img class="img-fluid w-100" src="img/home-oishi-delivery.png">
-          <a href="https://www.oishifood.com/restaurant.php" target="_blank">
+          <a href="#">
             <img src="img/enter-site-icon.png"> เข้าสู่เว็บไซต์
           </a>
         </div>
