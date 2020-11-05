@@ -6,7 +6,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="selected2">ประวัติความเป็นมาของบริษัท</a>
+                            <a class="nav-link" href="company-milestone.php" id="selected2">ประวัติความเป็นมาของบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
@@ -22,7 +22,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">โครงสร้างกลุ่มบริษัท</a>
+                            <a class="nav-link" href="group-structure.php">โครงสร้างกลุ่มบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
@@ -30,7 +30,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">คณะผู้บริหาร</a>
+                            <a class="nav-link" href="Board-of-Director.php">คณะผู้บริหาร</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
