@@ -204,18 +204,18 @@
             let display3 = ""
             let display4 = ""
             for (i=0; i<5; i++){
-                display1 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
+                display1 += `<div class="col-md-3"><div class="product-block"><a id="popup-button${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
             }
             for (i=5; i<23; i++){
-                display += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
+                display += `<div class="col-md-3"><div class="product-block"><a id="popup-button${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
             }
-            display2 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point23"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
+            display2 += `<div class="col-md-3"><div class="product-block"><a id="popup-button23"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI BLACK TEA LEMON<br>(500 ML)</h2></div></a></div></div>`
-            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point24"><div class="product-img-block"><img src="./img/export-product/chakulza1.jpg" class="product-img">
+            display3 += `<div class="col-md-3"><div class="product-block"><a id="popup-button24"><div class="product-img-block"><img src="./img/export-product/chakulza1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI CHAKULZA HONEY LEMON<br>(440 ML)</h2></div></a></div></div>`
-            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point25"><div class="product-img-block"><img src="./img/export-product/jubjai1.jpg" class="product-img">
+            display4 += `<div class="col-md-3"><div class="product-block"><a id="popup-button25"><div class="product-img-block"><img src="./img/export-product/jubjai1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">JUBJAI<br>(500 ML)</h2></div></a></div></div>`
             document.getElementById('gold').innerHTML += display1
             document.getElementById('black-tea').innerHTML += display2
@@ -235,12 +235,12 @@
         request.send(); 
         
         function dataReportStatus(data2) {
-            let display = ""
+            let display5 = ""
             for (i=0; i<25; i++){
                 display += `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`
                 display += `<img class="img-fluid" src="${data2[i].img}"></div></div>`
             }
-            document.getElementIdClass('content').innerHTML += display
+            document.getElementsIdClass('tabs-content').innerHTML += display5
         }
     </script>
     <script>
