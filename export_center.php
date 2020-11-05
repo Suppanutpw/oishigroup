@@ -240,6 +240,7 @@
                 display += `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`
                 display += `<img class="img-fluid" src="${data2[i].img}"></div></div>`
             }
+            body.innerHTML += display
         }
     </script>
     <script>
