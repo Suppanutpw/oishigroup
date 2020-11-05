@@ -34,9 +34,6 @@
      $url = "./json/news_activity.json";
      $response = file_get_contents($url);
      $result = json_decode($result);
-     for ($i=0; $i < sizeof($result);$i++){
-         $img = $result[$i]
-     }
      ?> 
     </div>
   </section>
