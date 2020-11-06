@@ -7,9 +7,9 @@
     $(document).ready(function(){
             $("#btn1").click(function(){
                 $("#beverage").fadeIn(1000);
-                $("#eato").fadeOut(0);
-                $("#restaurant").fadeOut(0);
-                $("#delivery").fadeOut(0);
+                $("#eato").css("display", "none"));
+                $("#restaurant").css("display", "none"));
+                $("#delivery").css("display", "none"));
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $(".span-class").css("color","gray;")
@@ -20,10 +20,10 @@
 
             });
             $("#btn2").click(function(){
-                $("#beverage").fadeOut(0);
+                $("#beverage").css("display", "none"));
                 $("#eato").fadeIn(1000);
-                $("#restaurant").fadeOut(0);
-                $("#delivery").fadeOut(0);
+                $("#restaurant").css("display", "none"));
+                $("#delivery").css("display", "none"));
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $(".span-class").css("color","gray;")
@@ -33,10 +33,10 @@
                    
             });
             $("#btn3").click(function(){
-                $("#beverage").fadeOut(0);
-                $("#eato").fadeOut(0);
+                $("#beverage").css("display", "none"));
+                $("#eato").css("display", "none"));
                 $("#restaurant").fadeIn(1000);
-                $("#delivery").fadeOut(0);
+                $("#delivery").css("display", "none"));
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $(".span-class").css("color","gray;")
@@ -46,9 +46,9 @@
         
             });
             $("#btn4").click(function(){
-                $("#beverage").fadeOut(0);
-                $("#eato").fadeOut(0);
-                $("#restaurant").fadeOut(0);
+                $("#beverage").css("display", "none"));
+                $("#eato").css("display", "none"));
+                $("#restaurant").css("display", "none"));
                 $("#delivery").fadeIn(1000);
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
@@ -100,6 +100,10 @@
     .block-img{
       margin-bottom:30px;
       width: 100%;
+    }
+    .block{
+      padding-bottom:50px;
+      margin-bottom:100px
     }
   </style>
 </head>
@@ -186,7 +190,7 @@
                 </button>
               </li>
           </ul>
-          <div class="tab-container">
+          <div class="tab-container" style="padding-top:20px">
             <div id="beverage" style="display"><div id="beverage-content"></div></div>
             <div id="eato" style="display:none"><div id="eato-content"></div></div>
             <div id="restaurant" style="display:none"><div id="restaurant-content"></div></div>
@@ -211,21 +215,21 @@
           let display3 = ""
           let display4 = ""
           for (i=0; i<data[0].beverage.length; i++){
-            display1 += `<div class="col-md-3"><div class="beverage-block"><div class="block-img"><span><img class="img-fluid" src="${data[0].beverage[i].img}" alt=""></span><span><img class="img-fluid" src="${data[0].beverage[i].logo}" alt=""></span></div>
+            display1 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="${data[0].beverage[i].img}" alt=""></span><span><img class="img-fluid" src="${data[0].beverage[i].logo}" alt=""></span></div>
                         <div class="block-title"><h2 style="font-size: 24px;font-weight: 600;letter-spacing: 1px;">${data[0].beverage[i].title}</h2><p style="margin-bottom:30px">${data[0].beverage[i].describe}</p></div>
                         <div class="oishi-button"><a class="inline-popups card-button float-left" href="#popups">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
           };
           for (i=0; i<data[1].eato.length; i++){
-            display2 += `<div class="col-md-3"><div class="eato-block"><div class="block-img"><span><img class="img-fluid" src="${data[1].eato[i].img}" alt=""></span><span><img class="img-fluid" src="${data[1].eato[i].logo}" alt=""></span></div>
+            display2 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="${data[1].eato[i].img}" alt=""></span><span><img class="img-fluid" src="${data[1].eato[i].logo}" alt=""></span></div>
                         <div class="block-title"><h2 style="font-size: 24px;font-weight: 600;letter-spacing: 1px;">${data[1].eato[i].title}</h2><p style="margin-bottom:30px">${data[1].eato[i].describe}</p></div>
                         <div class="oishi-button"><a class="inline-popups card-button float-left" href="#popups">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
           };
           for (i=0; i<data[2].restaurant.length; i++){
-            display3 += `<div class="col-md-3"><div class="restaurant-block"><div class="block-img"><span><img class="img-fluid" src="${data[2].restaurant[i].img}" alt=""></span><span><img class="img-fluid" src="${data[2].restaurant[i].logo}" alt=""></span></div>
+            display3 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="${data[2].restaurant[i].img}" alt=""></span><span><img class="img-fluid" src="${data[2].restaurant[i].logo}" alt=""></span></div>
                         <div class="block-title"><h2 style="font-size: 24px;font-weight: 600;letter-spacing: 1px;">${data[2].restaurant[i].title}</h2><p style="margin-bottom:30px">${data[2].restaurant[i].describe}</p></div>
                         <div class="oishi-button"><a class="inline-popups card-button float-left" href="#popups">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
           };
-          display4 += `<div class="col-md-3"><div class="delivery-block"><div class="block-img"><span><img class="img-fluid" src="https://www.oishigroup.com/upload_file/brand/190621021231_WEB-HOME-F1.jpg" alt="">
+          display4 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="https://www.oishigroup.com/upload_file/brand/190621021231_WEB-HOME-F1.jpg" alt="">
                       </span><span><img class="img-fluid" src="https://www.oishigroup.com/upload_file/brand/190621021235_WEB-HOME-19_logo.jpg" alt=""></span></div>
                       <div class="block-title"><h2 style="font-size: 24px;font-weight: 600;letter-spacing: 1px;">OISHI DELIVERY</h2><p style="margin-bottom:30px">บริการจัดส่งความอร่อยสไตล์ญี่ปุ่นถึงบ้าน เพียงคลิกมาที่ <a style="color:red" href="https://oishidelivery.com/th">www.oishidelivery.com</a></p></div>
                       <div class="oishi-button"><a class="inline-popups card-button float-left" href="#popups">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
