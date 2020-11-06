@@ -29,17 +29,20 @@
   <section id="content" style="z-index: 20 !important;">
     <div class="container clearfix">
       <h1 class="text-center"><font color="red">OISHI</font> NEWS & <span class="normal">ACTIVITY</span></h1>
-      
-     <?php
-     $url = "./json/news_activity.json";
-     $response = file_get_contents($url);
-     $result = json_decode($result);
-     for ($i=0; $i < sizeof($result);$i++){
-         $img = $result[$i]
-     }
-     ?> 
     </div>
+    <div></div>
   </section>
-
+  <script>
+        let requestURL = './json/news_activity.json'; 
+        let request = new XMLHttpRequest(); 
+        request.onreadystatechange = function () { 
+            if (request.readyState == 4 && request.status == 200) {             
+                dataReportStatus(JSON.parse(request.responseText));            
+            } }; 
+        request.open("GET", requestURL, true); 
+        request.send(); 
+        function dataReportStatus(data) {
+        }
+  </script>
 <!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
 <?php require('footer.php'); ?>
