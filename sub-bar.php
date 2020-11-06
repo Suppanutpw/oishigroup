@@ -26,7 +26,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">คณะกรรมการบริษัท</a>
+                            <a class="nav-link" href="committee.php">คณะกรรมการบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
@@ -34,11 +34,11 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">คณะกรรมการชุดย่อย</a>
+                            <a class="nav-link" href="subcomittee.php">คณะกรรมการชุดย่อย</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หัวหน้าหน่วยงานตรวจสอบภายใน</a>
+                            <a class="nav-link" href="insider.php">หัวหน้าหน่วยงานตรวจสอบภายใน</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
