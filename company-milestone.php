@@ -33,7 +33,7 @@
         height: 50px;
         font-size: 24px;
         text-align: center;
-        
+        line-height: 50px;
     }
     #dates2 li{
         list-style: none;
@@ -51,12 +51,12 @@
     .selected{
         color:red;
         font-size: 30px;
-        
+
     }
 </style>
 <body>
     <?php require('header.php');?>
-    
+
     <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
     <img class="img-fluid" src="./img/banner.jpg">
     <!-- slide show ลายพู่กันด้านล่าง -->
@@ -69,7 +69,7 @@
     <section id="content" style="z-index: 20 !important;">
         <div class="container">
             <div class="row">
-                
+
                 <?php require('sub-bar.php'); ?>
 
                 <div class="col-md-9">

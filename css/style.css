@@ -489,8 +489,8 @@ h4.card-title {
   position: relative;
   background: #FFF;
   padding: 50px;
-  width:auto;
-  max-width:800px;
+  width: auto;
+  max-width: 800px;
   margin: 0 auto;
 }
 .popup-text-pic h1 {
@@ -504,6 +504,9 @@ h4.card-title {
   font-size: 15px;
   line-height: 1.3;
   margin: 0;
+}
+.popup-text-pic .img-fluid {
+  width: 100%;
 }
 .mfp-close {
   width: 40px;
