@@ -80,8 +80,11 @@
         background-color: #cbdda3;
     }
     .circle{
+        display: block;
         height: 15px;
         width: 15px;
+        margin-left: auto;
+        margin-right: auto;
         line-height: inherit;
     }
     </style>
@@ -287,7 +290,7 @@
                                             <td>น้ำผึ้งผสมมะนาว</td>
                                             <td class="green"><img src="./img/circle.png" alt="" class="circle"></i></td>
                                             <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
-                                            <td class="green"><i class="iconcorp-circle"></i></td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
                                             <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
                                             <td class="green">&nbsp;</td>
                                             <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
