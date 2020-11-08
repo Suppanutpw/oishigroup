@@ -34,10 +34,6 @@
         font-size: 24px;
         text-align: center;
         line-height: 50px;
-<<<<<<< HEAD
-        
-=======
->>>>>>> 38e5a5ddf8eec84cfd35aa16fadba705239d4635
     }
     #dates2 li{
         list-style: none;
@@ -55,13 +51,8 @@
     }
     .selected{
         color:red;
-<<<<<<< HEAD
-        font-size: 36px;
-        
-=======
         font-size: 30px;
 
->>>>>>> 38e5a5ddf8eec84cfd35aa16fadba705239d4635
     }
 </style>
 <body>
