@@ -30,9 +30,10 @@
         list-style: none;
         float: left;
         width: 100px;
-        height: 50px;
+        height: 70px;
         font-size: 24px;
         text-align: center;
+        line-height: 50px;
         
     }
     #dates2 li{
@@ -41,6 +42,7 @@
         width: 800px;
         height: auto;
         margin-right:55px;
+        line-height: auto;
     }
     #dates2 ol {
         padding: 20px;
@@ -50,7 +52,7 @@
     }
     .selected{
         color:red;
-        font-size: 30px;
+        font-size: 36px;
         
     }
 </style>
@@ -79,64 +81,64 @@
                         <div class="col-md-12" id="history">
                             <ul id="dates" style="width:3000px; margin-left: 350px;">
                                 <li>
-                                    <a href="#" class="selected" onclick="slide(); return false;">2562</a>
+                                    <a href="" class="selected" onclick="slide(this); return false;" value="0">2562</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide1(); return false;">2561</a>
+                                    <a href="" onclick="slide(this); return false;" value="1">2561</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide2(); return false;">2560</a>
+                                    <a href="" onclick="slide(this); return false;" value="2">2560</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide3(); return false;">2559</a>
+                                    <a href="" onclick="slide(this); return false;" value="3">2559</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide4(); return false;">2558</a>
+                                    <a href="" onclick="slide(this); return false;" value="4">2558</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide5(); return false;">2557</a>
+                                    <a href="" onclick="slide(this); return false;" value="5">2557</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide6(); return false;">2556</a>
+                                    <a href="" onclick="slide(this); return false;" value="6">2556</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide7(); return false;">2555</a>
+                                    <a href="" onclick="slide(this); return false;" value="7">2555</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide8(); return false;">2554</a>
+                                    <a href="" onclick="slide(this); return false;" value="8">2554</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide9(); return false;">2553</a>
+                                    <a href="" onclick="slide(this); return false;" value="9">2553</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide10(); return false;">2552</a>
+                                    <a href="" onclick="slide(this); return false;" value="10">2552</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide11(); return false;">2551</a>
+                                    <a href="" onclick="slide(this); return false;" value="11">2551</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide12(); return false;">2550</a>
+                                    <a href="" onclick="slide(this); return false;" value="12">2550</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide13(); return false;">2549</a>
+                                    <a href="" onclick="slide(this); return false;" value="13">2549</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide14(); return false;">2548</a>
+                                    <a href="" onclick="slide(this); return false;" value="14">2548</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide15(); return false;">2547</a>
+                                    <a href="" onclick="slide(this); return false;" value="15">2547</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide16(); return false;">2546</a>
+                                    <a href="" onclick="slide(this); return false;" value="16">2546</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide17(); return false;">2545</a>
+                                    <a href="" onclick="slide(this); return false;" value="17">2545</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide18(); return false;">2544</a>
+                                    <a href="" onclick="slide(this); return false;" value="18">2544</a>
                                 </li>
                                 <li>
-                                    <a href="" onclick="slide19(); return false;">2542</a>
+                                    <a href="" onclick="slide(this); return false;" value="19">2542</a>
                                 </li>
                             </ul>
                         </div>
@@ -278,6 +280,156 @@
                                     </div>
                                     <hr>
                                 </li>
+                                <li>
+                                    <p>ดำเนินการเพิ่มทุนในบริษัทย่อย ได้แก่ Oishi International Holdings Limited และ Oishi F&B (Singapore) Pte. Ltd. โดยมีวัตถุประสงค์หลัก เพื่อรองรับการเพิ่มทุนของ Oishi Myanmar Limited ซึ่งเป็นบริษัทย่อยในสาธารณรัฐแห่งสหภาพเมียนมาร์ เพื่อเป็นเงินทุนหมุนเวียนและรองรับการขยายตัวของ ธุรกิจในอนาคต</p>
+                                    <hr>
+                                    <p>ร้านโออิชิ แกรนด์ จัดเทศกาลอาหารพิเศษ “Phuket Lobster Festival 2016” ในช่วงเทศกาลวันแม่แห่งชาติ</p>
+                                    <hr>
+                                    <p>ร้านโออิชิ บุฟเฟต์ จัดเทศกาลอาหารสุดพิเศษตลอดปี อาทิเช่น เทศกาลมากิ</p>
+                                    <hr>
+                                    <p>ร้านชาบูชิ ปรับรูปแบบการให้บริการใหม่ภายใต้แนวคิด “Shabushi and So Much More” โดยเน้นการสร้าง คุณค่าและความหลากหลายของรายการอาหารและ การให้บริการที่น่าประทับใจ</p>
+                                    <hr>
+                                    <p>ร้านโออิชิ ราเมน นำเสนอรายการอาหารใหม่ ได้แก่ นาเบะ หรือหม้อไฟตามแบบฉบับญี่ปุ่น โดยมีการหมุมเวียน เปลี่ยนรสชาติทุกรอบระยะเวลา 2 เดือน</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์แซนวิชรูปแบบใหม่ โออิชิ แซนวิช อบร้อน โดยมีช่องทางการจัดจำหน่ายหลักผ่านร้าน แฟมิลี่ มาร์ท</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์โออิชิ เกี๊ยวซ่ารวมรส โดยนำ เกี๊ยวซ่าต่างรสชาติถึง 5 รสชาติมาบรรจุรวมกันใน บรรจุภัณฑ์เดียวกัน จัดจำหน่ายผ่านร้าน 7-Eleven ทั่วประเทศ</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์ โออิชิ โอปัง ขนมปังรูปหน้าหมี สอดไส้ ที่สามารถแต่งหน้าตุ๊กตาหมีได้ตามจินตนาการ โดยจัดจำหน่ายผ่านร้าน 7-Eleven ทั่วประเทศ</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์อาหารพร้อมทานแช่แข็งประเภท เส้นราเมน โดยจัดจำหน่ายผ่านช่องทางไฮเปอร์มาร์เก็ต และซุปเปอร์มาร์เก็ตเป็นหลัก</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์โออิชิ ชาเขียว กลิ่นองุ่นเคียวโฮ ซึ่งเป็นนวัตกรรมใหม่ชาเขียวเคี้ยวได้ และผลิตภัณฑ์โออิชิ ชาเขียวกลิ่นซากุระ สตรอเบอร์รี่ ที่มาพร้อมนวัตกรรมใหม่ บรรจุภัณฑ์เปลี่ยนสีได้ตามอุณหภูมิ เพื่อตอบสนอง ความต้องการผู้บริโภคเพื่อให้ได้ความแปลกใหม่และ สนุกสนานมากยิ่งขึ้น</p>
+                                    <hr>
+                                    <p>ขยายตลาดการจัดจำหน่ายเครื่องดื่มในต่างประเทศ ไปยังประเทศใหม่ ได้แก่ ประเทศสาธารณรัฐฝรั่งเศส และสหรัฐอาหรับเอมิเรตส์</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดดำเนินการร้าน “ชาบูชิ” เพิ่มอีก 1 สาขา ในเมืองย่างกุ้ง ประเทศเมียนมาร์ ที่ Junction Square Shopping Center</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์เครื่องดื่มชาเขียวพร้อมดื่ม รสชาติใหม่ “โออิชิ คาบูเซฉะ สูตรน้ำตาลน้อย” เพื่อตอบโจทย์กลุ่มผู้บริโภคที่ชื่นชอบชาเขียวระดับ พรีเมี่ยมและห่วงใยสุขภาพ</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายเครื่องดื่มชาเขียวพร้อมดื่ม “โออิชิ รสแตงโม” ขนาด 380 มล. ซึ่งจัดจำหน่ายเฉพาะช่วงฤดูร้อน ระหว่างเดือนมีนาคม ถึงเดือนมิถุนายน เท่านั้น</p>
+                                    <hr>
+                                    <p>เพิ่มขนาดบรรจุภัณฑ์ใหม่ เครื่องดื่มชาเขียวพร้อมดื่ม “โออิชิ ขนาด 800 มล.”โดยมีจัดจำหน่ายใน 3 รสชาติ ได้แก่ รสน้ำผึ้งผสมมะนาว รสข้าวญี่ปุ่น และรสลิ้นจี่ รวมถึงการปรับเปลี่ยนขนาดและรูปแบบบรรจุภัณฑ์ โออิชิ ฟรุตโตะ จากขนาด 350 มล. เป็น 380 มล.</p>
+                                    <hr>
+                                    <p>เชิญเชฟกระทะเหล็กจากประเทศญี่ปุ่น “เชฟฮิโรยูกิ ซาไก” มารังสรรค์เมนูสุดพิเศษ ให้ลูกค้าได้ลิ้มลองภายในร้าน “โออิชิ บุฟเฟต์” ตลอดทั้งปี</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์กลุ่มแซนวิชใหม่ ภายใต้ชื่อ “โออิชิ เทรนดี้โรล” ผ่านช่องทางร้านสะดวกซื้อ</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์รสชาติใหม่ของกลุ่มผลิตภัณฑ์ “โออิชิ เกี๊ยวซ่า” อาทิ เกี๊ยวซ่าไส้สไปซี่ซีฟู๊ด ไส้กระเพราหมู และ ไส้หมูยากินิกุ</p>
+                                    <hr>
+                                    <p>เริ่มจำหน่ายผลิตภัณฑ์อาหารแช่แข็งประเภทข้าว “โออิชิ เบนโตะ” ในหลากหลายรสชาติ ได้แก่ ข้าวหมูสไปซี่ ข้าวหมูซอสญี่ปุ่น และข้าวหน้าไก่เทอริยากิ โดยจำหน่าย ในช่องทางไฮเปอร์มาร์เก็ตและซุปเปอร์มาร์เก็ต</p>
+                                    <hr>
+                                    <p>ปรับรูปแบบบรรจุภัณฑ์ ชาเขียวโออิชิ คาบูเซฉะ ให้มี ความสดใสและทันสมัย แต่ยังคงความเป็นญี่ปุ่น แบบพรีเมี่ยม และการปรับรูปแบบบรรจุภัณฑ์เครื่องดื่ม ชาดำโซดา โออิชิ ชาคูลล์ซ่า เป็นกระป๋องทรงสลีค</p>
+                                    <hr>
+                                    <p>ขยายตลาดการจัดจำหน่ายสินค้าในต่างประเทศไปยัง ประเทศใหม่ ๆ ได้แก่ สหพันธ์สาธารณรัฐเยอรมนี สาธารณรัฐฟินแลนด์ สหราชอาณาจักรบริเตนใหญ่ และไอร์แลนด์เหนือ</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>จัดตั้งบริษัทย่อยเพื่อรองรับการขยายตัวทางธุรกิจ ทั้งในและต่างประเทศ อันได้แก่ บริษัท โออิชิ สแน็ค จำกัด ในประเทศไทย Oishi F&B (Singapore) Pte. Ltd. ("OSPL") ในประเทศสิงค์โปร์ และ Oishi Myanmar Limited ("OML") ในประเทศสาธารณรัฐแห่ง สหภาพเมียนมาร์ (ประเทศเมียนมาร์)</p>
+                                    <hr>
+                                    <p>เปิดดำเนินการร้านอาหารชาบูชิ ในเมืองย่างกุ้ง และ เมืองมัณฑะเลย์ ประเทศเมียนมาร์</p>
+                                    <hr>
+                                    <p>ออกแซนวิชรูปแบบใหม่ "โออิชิ เทรนดี้" 3 รสชาติ ได้แก่ "แฮมไก่ชีส" "ทูน่าซีซาร์สลัด" และ "ปูอัดอลาสก้าไข่กุ้ง" เพื่อจัดจำหน่ายภายในร้านโลตัส เอ็กซ์เพรส</p>
+                                    <hr>
+                                    <p>ออกจำหน่ายผลิตภัณฑ์ใหม่ได้แก่ เครื่องดื่มชาเขียว พร้อมดื่ม "โออิชิ คาบูเซฉะ" ซึ่งเป็นเครื่องดื่มชาเขียว ผลิตจากชาคลุมระดับพรีเมี่ยม เครื่องดื่มชาสมุนไพร พร้อมดื่ม "โออิชิ โอเฮิร์บ" และเครื่องดื่มชาผสมนม รสชาติใหม่ "โออิชิ โตเกียว บานาน่า"</p>
+                                    <hr>
+                                    <p>ในเดือนธันวาคม 2557 โครงการ Cold Aseptic Filling สายการผลิตที่ 3 ที่โรงงานนิคมอุตสาหกรรม นวนคร เริ่มผลิตเพื่อการพาณิชย์</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>ในเดือนมีนาคม โครงการ Cold Aseptic Filling สายการผลิตที่ 2 ที่อำเภอวังม่วง จังหวัดสระบุรี เริ่มผลิตเพื่อการพาณิชย์</p>
+                                    <hr>
+                                    <p>เปิดดำเนินการครัวกลางแห่งใหม่ที่อำเภอบ้านบึง จังหวัดชลบุรี</p>
+                                    <hr>
+                                    <p>นำชาเขียวผสมผลไม้ "ฟรุตโตะ" กลับมาขายอีกครั้ง พร้อมออกรสชาติใหม่ 3 รสชาติได้แก่ "สตรอเบอรี่ และเมลอน", "เลมอนและเบอรี่" และ "แอ๊ปเปิ้ลเขียวและองุ่นขาว"</p>
+                                    <hr>
+                                    <p>ออกเครื่องดื่มชาเขียวพร้อมดื่มรสชาติใหม่ "ลิ้นจี่"</p>
+                                    <hr>
+                                    <p>ออกแซนวิชรสชาติใหม่ "หมูอบชีส" และเกี๊ยวซ่า รสชาติใหม่ "หมูทาโกะยากิ"</p>
+                                    <hr>
+                                    <p>ได้รับบัตรส่งเสริมการลงทุนเพิ่มอีก 4 โครงการ สำหรับ ที่นิคมอุตสาหกรรมนวนคร และที่อำเภอวังม่วง จังหวัดสระบุรี</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดตัวผลิตภัณฑ์สาหร่ายทอดกรอบ "โอโนริ"</p>
+                                    <hr>
+                                    <p>ออกเครื่องดื่มชาเขียวแบบกล่อง UHT ลายการ์ตูน "One Piece"</p>
+                                    <hr>
+                                    <p>เปิดให้บริการร้านข้าวหน้าสไตล์ญี่ปุ่น "คาคาชิ"</p>
+                                    <hr>
+                                    <p>ได้รับบัตรส่งเสริมการลงทุนสำหรับโครงการ Cold Aseptic Filling สายการผลิตที่ 2</p>
+                                    <hr>
+                                    <p>ออกผลิตภัณฑ์ชาเขียวขวดแก้วแบบคืนขวด</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>ออกเครื่องดื่มชาเขียวผสมน้ำผลไม้ Fruito</p>
+                                    <hr>
+                                    <p>ออกเครื่องดื่มชาเขียวกระป๋องผสมโซดาเป็นครั้งแรกของประเทศไทย</p>
+                                    <hr>
+                                    <p>เปิดร้านอาหาร Nikuya ยากินิกุ บุฟเฟต์ปิ้งย่างในสไตล์ญี่ปุ่น</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>ออกเครื่องดื่มรสชาติใหม่ Goji Berry</p>
+                                    <hr>
+                                    <p>ซื้อที่ดินเพิ่มเติมที่โรงงานนวนคร ทำให้มีพื้นที่เพิ่มขึ้นเป็น 61.5 ไร่</p>
+                                    <hr>
+                                    <p>ได้รับบัตรส่งเสริมการลงทุนเพิ่มสำหรับสองโครงการคือ Cold Aseptic Filling และ UHT</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดให้บริการร้านอาหารอุด้งและโซบะ Kazokutei แฟรนไชส์จากประเทศญี่ปุ่น</p>
+                                    <hr>
+                                    <p>ปรับเปลี่ยนผลิตภัณฑ์ อะมิโน โอเค มาเป็น อะมิโน พลัส โดยปรับเปลี่ยนกลยุทธ์ทางการตลาดและ จุดขายใหม่ทั้งหมด</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>ออกผลิตภัณฑ์ใหม่กาแฟพร้อมดื่มภายใต้ชื่อ คอฟฟิโอ</p>
+                                    <hr>
+                                    <p>บริษัท ไทยเบฟเวอเรจ จำกัด (มหาชน) เข้าเป็นผู้ถือหุ้นรายใหญ่ของบริษัท</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>ออกผลิตภัณฑ์ชาเขียวรสชาดำผสมมะนาว</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดดำเนินการโรงงานอมตะนคร</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เริ่มผลิตและจำหน่ายเครื่องดื่มน้ำผลไม้ผสมอะมิโนภายใต้ชื่อ อะมิโน โอเค</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>วันที่ 25 สิงหาคม 2547 นำหุ้นสามัญเพิ่มทุนของบริษัทเข้าทำการซื้อขายในตลาดหลักทรัพย์แห่งประเทศไทย</p>
+                                    <hr>
+                                    <p>เปิดบริการ โออิชิ แกรนด์ แกรนด์บุฟเฟต์ ที่สยามดิสคัฟเวอรี่</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดดำเนินการครัวกลางแห่งใหม่ที่โรงงานนวนคร หน่วยผลิตอาหารและเครื่องดื่ม เพื่อสนับสนุนการขาย ภายในร้านค้าของบริษัท</p>
+                                    <hr>
+                                    <p>เริ่มการผลิตเครื่องดื่มชาเขียวออกสู่ตลาดภายใต้ชื่อ โออิชิ กรีนที</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดบริการร้านอาหารระบบสายพานสไตล์บุฟเฟต์ที่บริการทั้งข้าวปั้นหน้าต่างๆ และสุกี้หม้อไฟญี่ปุ่น ภายใต้ชื่อ ชาบูชิ</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดดำเนินการครัวกลางแห่งใหม่ที่โรงงานนวนคร หน่วยผลิตอาหารและเครื่องดื่ม เพื่อสนับสนุนการขาย ภายในร้านค้าของบริษัท</p>
+                                    <hr>
+                                    <p>เริ่มการผลิตเครื่องดื่มชาเขียวออกสู่ตลาดภายใต้ชื่อ โออิชิ กรีนที</p>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>เปิดให้บริการร้านบะหมี่ญี่ปุ่นภายใต้ชื่อ โออิชิ ราเมน</p>
+                                    <hr>
+                                </li>
                             </ul>
                         </div>
                         <!-- End เนื้อหา-->
@@ -293,113 +445,20 @@
     var x = document.getElementById("dates");
     var y = document.getElementById("dates2");
     //selected la
-    $("a").click(function(){
+    $("ul a").click(function(){
         $("a").removeClass("selected");
         $(this).addClass("selected");
     });
     // end selected la
 
     //slide la
-    function slide(){;
-        x.style.marginLeft = "350px";
-        y.style.marginLeft = "0px";
-        return false;
-    }
-
-    function slide1(){
-        x.style.marginLeft = "250px";
-        y.style.marginLeft = "-855px";
-        return false;
-    }
-
-    function slide2(){
-        x.style.marginLeft = "150px";
-        y.style.marginLeft = "-1710px";
-        return false;
-    }
-
-    function slide3(){
-        x.style.marginLeft = "50px";
-        return false;
-    }
-
-    function slide4(){
-        x.style.marginLeft = "-50px";
-        return false;
-    }
-
-    function slide5(){
-        x.style.marginLeft = "-150px";
-        return false;
-    }
-
-    function slide6(){
-        x.style.marginLeft = "-250px";
-        return false;
-    }
-
-    function slide7(){
-        x.style.marginLeft = "-350px";
-        return false;
-    }
-
-    function slide8(){
-        x.style.marginLeft = "-450px";
-        return false;
-    }
-
-    function slide9(){
-        x.style.marginLeft = "-550px";
-        return false;
-    }
-
-    function slide10(){
-        x.style.marginLeft = "-650px";
-        return false;
-    }
-
-    function slide11(){
-        x.style.marginLeft = "-750px";
-        return false;
-    }
-
-    function slide12(){
-        x.style.marginLeft = "-850px";
-        return false;
-    }
-
-    function slide13(){
-        x.style.marginLeft = "-950px";
-        return false;
-    }
-
-    function slide14(){
-        x.style.marginLeft = "-1050px";
-        return false;
-    }
-
-    function slide15(){
-        x.style.marginLeft = "-1150px";
-        return false;
-    }
-
-    function slide16(){
-        x.style.marginLeft = "-1250px";
-        return false;
-    }
-
-    function slide17(){
-        x.style.marginLeft = "-1350px";
-        return false;
-    }
-
-    function slide18(){
-        x.style.marginLeft = "-1450px";
-        return false;
-    }
-
-    function slide19(){
-        x.style.marginLeft = "-1550px";
+    function slide(e){
+        var cal = 350 - (parseInt(e.getAttribute("value")*100));
+        var con = 0 - (parseInt(e.getAttribute("value")*855))
+        console.log(cal);
+        console.log(con);
+        x.style.marginLeft = cal + "px";
+        y.style.marginLeft = con + "px";
         return false;
     }
 </script>

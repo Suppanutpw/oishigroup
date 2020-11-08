@@ -42,7 +42,7 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</a>
+                            <div class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</div>
                             <div id="box" style="display:none; padding: 0 0 0 2rem;">
                                 <a href="">การกำกับดูแลกิจการที่ดี</a><br>
                                 <a href="">จรรยาบรรณธุรกิจ</a><br>
