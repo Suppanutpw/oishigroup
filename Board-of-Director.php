@@ -33,6 +33,9 @@ hr.red{
 h6.accolade{
 	color:red;
 }
+#selected8{
+        color:red;
+}
   </style>
 </head>
 <body>

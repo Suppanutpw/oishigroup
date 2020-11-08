@@ -16,9 +16,6 @@ center {
     margin-left: auto;
     margin-right: auto;
 }
-#selected6{
-        color:red;
-}
   </style>
 </head>
 <body>
@@ -40,37 +37,21 @@ center {
           
           <?php require('sub-bar.php'); ?>
           <div class="col-md-9"><!--Right colum-->
-                    <h1>โครงสร้างกลุ่มบริษัท</h1><br>
+                    <h1>จรรยาบรรณธุรกิจ</h1><br>
                     <div class="row">
-                        <div class="col-12 text-center">
-                            <img class="popup-button img-fluid" src="./img/group-structure-2019-th.jpg" id="chart" style="margin-bottom: 1%">
-                            <h6 clas>Click on picture to enlarge</h6>
+                        
+                        <div class="col-4 text-center">
+                            <img src="./img/download-pic.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <h4>จรรยาบรรณโออิชิกรุ๊ป</h4>
+                            <p style="color:gray">บริษัท โออิชิ กรุ๊ป จำกัด (มหาชน)</p>
+                            <a class="inline-popups card-button float-left" id="popup-button1" href="#popups">ดาวน์โหลด<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
           </div>
       </div>
   </section>
-
-  <div id="popup-point" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
-        <div class="popup-text-pic" >
-            <img class="img-fluid" src="./img/group-structure-2019-th.jpg">
-        </div>
-  </div>
-
-  <script>
-    // Magnific Popup script
-    // คำสั่งให้ เกิด popup
-    $(document).on('click', '.popup-button', function(){ // .popup-button คือ class ที่
-      $.magnificPopup.open({
-          items: {
-              src: $("#popup-point"), // #popup-point id เป้าหมายของ popup ที่จะแสดง
-          },
-          type: 'inline',
-          mainClass: 'mfp-fade',
-      });
-    });
-    // END Magnific Popup script
-  </script>
 
 <?php require('footer.php'); ?>

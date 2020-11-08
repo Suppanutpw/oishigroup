@@ -16,26 +16,6 @@ center {
     margin-left: auto;
     margin-right: auto;
 }
-.bust{
-    border-radius: 100%;
-    width: 100%;
-}
-hr.red{
-  background: red;
-}
-.title{
-  color:gray;
-  font-size: 0.8em;
-}
-.col-md-4{
-  margin-top:100px;
-}
-h6.accolade{
-	color:red;
-}
-#selected10{
-        color:red;
-}
   </style>
 </head>
 <body>
@@ -57,13 +37,16 @@ h6.accolade{
           
           <?php require('sub-bar.php'); ?>
           <div class="col-md-9"><!--Right colum-->
-                    <h1>หัวหน้าหน่วยงานตรวจสอบภายใน</h1>
-                    <!--row1-->
+                    <h1>นโยบายการต่อต้านการทุจริตคอร์รัปชั่น</h1><br>
                     <div class="row">
-                        <div class="col-md-4"> 
-                            <hr class="red">
-                            <h6>นางสาวชนัทนุช วงศ์วรรณ</h6>
-                            <p class="title">ผู้อำนวยการฝ่ายตรวจสอบภายใน<br>เลขานุการคณะกรรมการตรวจสอบ<br>กรรมการบริหารความยั่งยืนและความเสี่ยง<br>และเลขานุการคณะกรรมการบริหารความยั่งยืน และความเสี่ยง</p>
+                        
+                        <div class="col-4 text-center">
+                            <img src="./img/download-pic.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <h4>นโยบายการต่อต้านการทุจริตคอร์รัปชั่น</h4>
+                            <p style="color:gray">บริษัท โออิชิ กรุ๊ป จำกัด (มหาชน)</p>
+                            <a class="inline-popups card-button float-left" id="popup-button1" href="#popups">ดาวน์โหลด<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>

@@ -25,6 +25,13 @@
     #selected5{
         color:red;
     }
+
+    center {
+        height:100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     </style>
 </head>
 <body>
@@ -50,7 +57,7 @@
                 <div class="col-md-9"><!--Right colum-->
                     <h1>โครงสร้างองกรณ์</h1><br>
                     <div class="row">
-                        <div class="col-12 ">
+                        <div class="col-12 text-center">
                             <img class="popup-button" src="./img/organization-chart-2019-th.jpg" id="chart" alt="">
                             <h6 clas>Click on picture to enlarge</h6>
                         </div>
