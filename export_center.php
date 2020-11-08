@@ -7,10 +7,10 @@
         $(document).ready(function(){
             $("#btn1").click(function(){
                 $("#green-tea").fadeIn(1000);
-                $("#black-tea").fadeOut(0);
-                $("#chakulza").fadeOut(0);
-                $("#jubjai").fadeOut(0);
-                $("#gold").fadeOut(0);
+                $("#black-tea").css("display", "none");
+                $("#chakulza").css("display", "none");
+                $("#jubjai").css("display", "none");
+                $("#gold").css("display", "none");
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn1").css("border-bottom", "2px solid rgb(179, 0, 0)");
@@ -19,11 +19,11 @@
 
             });
             $("#btn2").click(function(){
-                $("#green-tea").fadeOut(0);
+                $("#green-tea").css("display", "none");
                 $("#black-tea").fadeIn(1000);
-                $("#chakulza").fadeOut(0);
-                $("#jubjai").fadeOut(0);
-                $("#gold").fadeOut(0);
+                $("#chakulza").css("display", "none");
+                $("#jubjai").css("display", "none");
+                $("#gold").css("display", "none");
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn2").css("border-bottom", "2px solid rgb(179, 0, 0)");
@@ -31,11 +31,11 @@
                    
             });
             $("#btn3").click(function(){
-                $("#green-tea").fadeOut(0);
-                $("#black-tea").fadeOut(0);
+                $("#green-tea").css("display", "none");
+                $("#black-tea").css("display", "none");
                 $("#chakulza").fadeIn(1000);
-                $("#jubjai").fadeOut(0);
-                $("#gold").fadeOut(0);
+                $("#jubjai").css("display", "none");
+                $("#gold").css("display", "none");
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn3").css("border-bottom", "2px solid rgb(179, 0, 0)");
@@ -43,11 +43,11 @@
         
             });
             $("#btn4").click(function(){
-                $("#green-tea").fadeOut(0);
-                $("#black-tea").fadeOut(0);
-                $("#chakulza").fadeOut(0);
+                $("#green-tea").css("display", "none");
+                $("#black-tea").css("display", "none");
+                $("#chakulza").css("display", "none");
                 $("#jubjai").fadeIn(1000);
-                $("#gold").fadeOut(0);
+                $("#gold").css("display", "none");
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn4").css("border-bottom", "2px solid rgb(179, 0, 0)");
@@ -55,10 +55,10 @@
                 
             });
             $("#btn5").click(function(){
-                $("#green-tea").fadeOut(0);
-                $("#black-tea").fadeOut(0);
-                $("#chakulza").fadeOut(0);
-                $("#jubjai").fadeOut(0);
+                $("#green-tea").css("display", "none");
+                $("#black-tea").css("display", "none");
+                $("#chakulza").css("display", "none");
+                $("#jubjai").css("display", "none");
                 $("#gold").fadeIn(1000);
                 $( ".nav-btn" ).css( "border-bottom", "2px solid black");
                 $( ".nav-btn" ).css( "color", "black");
@@ -174,7 +174,7 @@
                     <li class="li-size"><button class="nav-btn" id="btn4"><img class="nav-img" src="\img\icon-export-4.png"><div><h1 class="nav-name">จับใจ</h1><h2 style="font-size:12px; float:left">JUBJAI</h2></div></button></li>
                     <li class="li-size"><button class="nav-btn" id="btn5"><img class="nav-img" src="\img\icon-export-5.png"><div><h1 class="nav-name">โออิชิ โกลด์</h1><h2 style="font-size:12px; float:left">OISHI GOLD</h2></div></button></li>
                 </ul>
-                <div class="tabs-content" stlye="padding-top:20px">
+                <div class="tabs-content" id="popup-content" stlye="padding-top:20px">
                     <div id="green-tea" style="display:"></div>
                     <div id="black-tea" style="display:none"></div>
                     <div id="chakulza" style="display:none"></div>
@@ -204,18 +204,18 @@
             let display3 = ""
             let display4 = ""
             for (i=0; i<5; i++){
-                display1 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
+                display1 += `<div class="col-md-3"><div class="product-block"><a id="popup-button${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
             }
             for (i=5; i<23; i++){
-                display += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
+                display += `<div class="col-md-3"><div class="product-block"><a id="popup-button${i}"><div class="product-img-block"><img src="${data[i].img}"class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">${data[i].title}<br>${data[i].volume}</h2></div></a></div></div>`
             }
-            display2 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point23"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
+            display2 += `<div class="col-md-3"><div class="product-block"><a id="popup-button23"><div class="product-img-block"><img src="./img/export-product/blacktea1.png" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI BLACK TEA LEMON<br>(500 ML)</h2></div></a></div></div>`
-            display3 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point24"><div class="product-img-block"><img src="./img/export-product/chakulza1.jpg" class="product-img">
+            display3 += `<div class="col-md-3"><div class="product-block"><a id="popup-button24"><div class="product-img-block"><img src="./img/export-product/chakulza1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">OISHI CHAKULZA HONEY LEMON<br>(440 ML)</h2></div></a></div></div>`
-            display4 += `<div class="col-md-3"><div class="product-block"><a href="" id="popup-point25"><div class="product-img-block"><img src="./img/export-product/jubjai1.jpg" class="product-img">
+            display4 += `<div class="col-md-3"><div class="product-block"><a id="popup-button25"><div class="product-img-block"><img src="./img/export-product/jubjai1.jpg" class="product-img">
                             </div><div class="product-title"><h2 style="font-size:14px;text-align:center">JUBJAI<br>(500 ML)</h2></div></a></div></div>`
             document.getElementById('gold').innerHTML += display1
             document.getElementById('black-tea').innerHTML += display2
@@ -225,22 +225,22 @@
         }
     </script>
     <script>
-        let requestURL = './json/export-popup.json'; 
-        let request = new XMLHttpRequest(); 
-        request.onreadystatechange = function () { 
-            if (request.readyState == 4 && request.status == 200) {             
-                dataReportStatus(JSON.parse(request.responseText));            
+        let requestURL1 = './json/export-popup.json'; 
+        let request1 = new XMLHttpRequest(); 
+        request1.onreadystatechange = function () { 
+            if (request1.readyState == 4 && request1.status == 200) {             
+                dataReportStatus1(JSON.parse(request1.responseText));            
             } }; 
-        request.open("GET", requestURL, true); 
-        request.send(); 
+        request1.open("GET", requestURL1, true); 
+        request1.send(); 
         
-        function dataReportStatus(data2) {
-            let display = ""
+        function dataReportStatus1(data2) {
+            let display5 = ""
             for (i=0; i<25; i++){
-                display += `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`
-                display += `<img class="img-fluid" src="${data2[i].img}"></div></div>`
+                display5 += `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`
+                display5 += `<img class="img-fluid" src="${data2[i].img}"></div></div>`
             }
-            body.innerHTML += display
+            document.getElementById('popup-content').innerHTML += display5
         }
     </script>
     <script>
