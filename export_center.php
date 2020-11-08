@@ -11,7 +11,7 @@
                 $("#chakulza").css("display", "none");
                 $("#jubjai").css("display", "none");
                 $("#gold").css("display", "none");
-                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "border-bottom", "2px solid lightgray");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn1").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn1").css("color", "red")
@@ -24,7 +24,7 @@
                 $("#chakulza").css("display", "none");
                 $("#jubjai").css("display", "none");
                 $("#gold").css("display", "none");
-                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "border-bottom", "2px solid lightgray");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn2").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn2").css("color", "red")
@@ -36,7 +36,7 @@
                 $("#chakulza").fadeIn(1000);
                 $("#jubjai").css("display", "none");
                 $("#gold").css("display", "none");
-                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "border-bottom", "2px solid lightgray");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn3").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn3").css("color", "red")
@@ -48,7 +48,7 @@
                 $("#chakulza").css("display", "none");
                 $("#jubjai").fadeIn(1000);
                 $("#gold").css("display", "none");
-                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "border-bottom", "2px solid lightgray");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn4").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn4").css("color", "red")
@@ -60,7 +60,7 @@
                 $("#chakulza").css("display", "none");
                 $("#jubjai").css("display", "none");
                 $("#gold").fadeIn(1000);
-                $( ".nav-btn" ).css( "border-bottom", "2px solid black");
+                $( ".nav-btn" ).css( "border-bottom", "2px solid lightgray");
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn5").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn5").css("color", "red")

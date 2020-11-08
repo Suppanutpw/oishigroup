@@ -78,9 +78,9 @@
     }
     .nav-btn{
         width:100%;
-        background-color:#ffffff00;
+        background-color:#ffffff00; 
         border:none;
-        border-bottom:solid 2px gray;
+        border-bottom:solid 2px #ccc;
         padding-left:15px;
         padding-right:15px;
         padding-bottom:15px
@@ -92,7 +92,8 @@
     }
     .name{
       margin-top:10px;
-      font-size:16px
+      font-size:16px;
+      float:left
     }
     .col-md-3{
       padding-left:15px;
@@ -167,8 +168,8 @@
 
   <!-- เนื้อหา {อย่าลบ section เด็ดขาด!!!} -->
   <section id="content" style="z-index: 20 !important;">
-    <div class="container clearfix" style="padding-bottom: 30px">
-      <h2 class="text-center" style="color:red;">OISHI <span style="color:black;padding-right:5px">BRAND</span></h2>
+    <div class="container clearfix" style="padding-bottom: 30px ">
+      <h2 class="text-center" style="color:red; font-size: 36px; font-weight: normal;">OISHI <span style="color:black;padding-right:5px">BRAND</span></h2>
     </div>
     <div class="container clearfix">
         <div id="tabs">
@@ -234,7 +235,7 @@
           for (i=0; i<data[0].beverage.length; i++){
             display1 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="${data[0].beverage[i].img}" alt=""></span><span><img class="img-fluid" src="${data[0].beverage[i].logo}" alt=""></span></div>
                         <div class="block-title"><h2 style="font-size: 24px;font-weight: 600;letter-spacing: 1px;">${data[0].beverage[i].title}</h2><p style="margin-bottom:30px; font-size:14px">${data[0].beverage[i].describe}</p></div>
-                        <div class="oishi-button"><a id="pop-btn${number}" class="inline-popups card-button float-left" href="${data[0].beverage[i].special}">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
+                        <div class="oishi-button"><a class="inline-popups card-button float-left" href="${data[0].beverage[i].special}">ดูเพิ่มเติม<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`
           };
           for (i=0; i<data[1].eato.length; i++){
             display2 += `<div class="col-md-3"><div class="block"><div class="block-img"><span><img class="img-fluid" src="${data[1].eato[i].img}" alt=""></span><span><img class="img-fluid" src="${data[1].eato[i].logo}" alt=""></span></div>
@@ -275,11 +276,16 @@
                 display5 +=   `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
                                 <div class="popup-text-pic" style="font-size:14px; text-align:center;">
                                   <img class="img-rounded img-fluid" src="${data2[i].img}">
+                                  </div>
                                   <div class="mt-4" style="text-align:left">
                                     <h1>${data2[i].title}</h1>
                                     <p>${data2[i].describe}</p>
-                                  </div>
                                 </div>
+                                <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
+                                <div class="enter-site"  style="text-align:center">
+                                  <a href="" style="color:red"><img src="./img/enter-site-icon.png" style="padding-right:5px">เข้าสู่เว็บไซต์</a>
+                                </div>
+                              </div>
                              </div>`
             }
             document.getElementById('popup-content').innerHTML += display5
@@ -287,34 +293,49 @@
               display5 +=   `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
                                 <div class="popup-text-pic" style="font-size:14px; text-align:center">
                                   <img class="img-fluid" src="${data2[i].img}">
+                                </div>
                                   <div class="mt-4" style="text-align:left">
                                     <h1>${data2[i].title}</h1>
                                     <p>${data2[i].describe}</p>
                                   </div>
+                                  <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
+                                <div class="enter-site"  style="text-align:center">
+                                  <a href="" style="color:red"><img src="./img/enter-site-icon.png" style="padding-right:5px">เข้าสู่เว็บไซต์</a>
                                 </div>
+                              </div>
                              </div>`
             }
             document.getElementById('popup-content').innerHTML += display5
             display5 +=   `<div id="popup-point${11}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
                                 <div class="popup-text-pic" style="font-size:14px; text-align:center">
                                   <img class="img-fluid" src="${data2[11].img}">
+                                </div>
                                   <div class="mt-4" style="text-align:left">
                                     <h1>${data2[11].title}</h1>
                                     ${data2[11].describe}
-                                  </div>
                                 </div>
+                                <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
+                                <div class="enter-site"  style="text-align:center">
+                                  <a href="" style="color:red"><img src="./img/enter-site-icon.png" style="padding-right:5px">เข้าสู่เว็บไซต์</a>
+                                </div>
+                              </div>
                              </div>`
             document.getElementById('popup-content').innerHTML += display5
             for(i=12; i<15; i++){
               display5 +=`<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix">
-                                <div class="popup-text-pic" style="font-size:14px; text-align:center">
-                                  <img class="img-fluid" src="${data2[i].img}">
-                                  <div class="mt-4" style="text-align:left">
-                                    <h1>${data2[i].title}</h1>
-                                    <p>${data2[i].describe}</p>
-                                  </div>
+                              <div class="popup-text-pic" style="font-size:14px; text-align:center">
+                                <img class="img-fluid" src="${data2[i].img}">
+                              </div>
+                              <div class="mt-4" style="text-align:left">
+                                <h1>${data2[i].title}</h1>
+                                <p>${data2[i].describe}</p>
+                              </div>
+                              <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
+                                <div class="enter-site" style="text-align:center">
+                                  <a href="" style="color:red"><img src="./img/enter-site-icon.png" style="padding-right:5px">เข้าสู่เว็บไซต์</a>
                                 </div>
-                             </div>`
+                              </div>
+                            </div>`
             }
             document.getElementById('popup-content').innerHTML += display5
         }
