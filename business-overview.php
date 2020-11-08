@@ -283,7 +283,7 @@
                                 </thead>
                                     <tbody>
                                         <tr>
-                                            <td rowspan="8" class="ir_textMainHighlight">โออิชิ<br>กรีนที</td>
+                                            <td rowspan="8" class="product">โออิชิ<br>กรีนที</td>
                                             <td>น้ำผึ้งผสมมะนาว</td>
                                             <td class="green"><img src="./img/circle.png" alt="" class="circle"></i></td>
                                             <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
@@ -373,7 +373,7 @@
                                             <td class="">&nbsp;</td>
                                         </tr>
                                         <tr class="top">
-                                            <td rowspan="4" class="ir_textMainHighlight">โออิชิ<br>คาบูเซฉะ</td>
+                                            <td rowspan="4" class="product">โออิชิ<br>คาบูเซฉะ</td>
                                             <td>เก็นไมฉะ<br>สูตรไม่มีน้ำตาล</td>
                                             <td class="green">&nbsp;</td>
                                             <td class="">&nbsp;</td>
@@ -418,7 +418,7 @@
                                             <td class="">&nbsp;</td>
                                         </tr>
                                         <tr class="top">
-                                            <td class="ir_textMainHighlight">โออิชิ<br>แบล็คที</td>
+                                            <td class="product">โออิชิ<br>แบล็คที</td>
                                             <td>ชาดำผสมมะนาว</td>
                                             <td class="green">&nbsp;</td>
                                             <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
@@ -430,7 +430,7 @@
                                             <td class="">&nbsp;</td>
                                         </tr>
                                         <tr class="top">
-                                            <td class="ir_textMainHighlight">โออิชิ<br>ชาคูลล์ซ่า</td>
+                                            <td class="product">โออิชิ<br>ชาคูลล์ซ่า</td>
                                             <td>น้ำผึ้งผสมมะนาว</td>
                                             <td class="green">&nbsp;</td>
                                             <td class="">&nbsp;</td>
