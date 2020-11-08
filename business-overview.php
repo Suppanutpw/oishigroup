@@ -14,7 +14,7 @@
 
     .foodtag{
         display: block;
-        text-align:center;
+        text-align: center;
         padding: 0 15px;
         background-image: url(./img/about-tab-bg-1.png);
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
     .bavtag{
         display: block;
-        text-align:center;
+        text-align: center;
         padding: 0 15px;
         background-image: url(./img/about-tab-bg-2.png);
         background-repeat: no-repeat;
@@ -48,11 +48,41 @@
     img{
         max-width: 100%;
         vertical-align: middle;
-        box-sizing: inherit;
     }
 
     #bavarage{
         display:none;
+    }
+    table {
+        border-collapse: collapse;
+        
+    }
+    thead{
+        background-color: #8eba27;
+        color: white;
+        text-align: center;
+    }
+    .sub{
+        background-color: #72951f;
+    }
+    tbody{
+        background-color: #e0e9cc;
+        color: #464646;
+    }
+    td{
+        padding: 10px 20px;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .top{
+        border-top: 2px solid #72951f;
+    }
+    .green{
+        background-color: #cbdda3;
+    }
+    .circle{
+        height: 15px;
+        width: 15px;
+        line-height: inherit;
     }
     </style>
 </head>
@@ -230,7 +260,189 @@
                         <div class="col-md-12">
                             <h4>ธุรกิจเครื่องดื่ม</h4>
                             <p>บริษัทและบริษัทย่อยเป็นผู้ผลิตและจำหน่ายเครื่องดื่มรสชาติต่าง ๆ และมีบรรจุภัณฑ์ที่หลากหลายดังต่อไปนี้</p>
-                            <img src="./img/table.jpg" alt="">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td width="13%" rowspan="2">เครื่องดื่ม</td>
+                                        <td rowspan="2">รสชาติ</td>
+                                        <td colspan="5" class="">ขวดพลาสติก</td>
+                                        <td class="">ขวดแก้ว</td>
+                                        <td class="">กล่อง</td>
+                                        <td class="">กระ<br>ป๋อง</td>
+                                    </tr>
+                                    <tr class="sub">
+                                        <td width="8%">800<br>มล.</td>
+                                        <td width="8%">500<br>มล.</td>
+                                        <td width="8%">380<br>มล.</td>
+                                        <td width="8%">350<br>มล.</td>
+                                        <td width="8%">400<br>มล.</td>
+                                        <td width="8%">400<br>มล.</td>
+                                        <td width="8%">180<br>มล.</td>
+                                        <td width="8%">320<br>มล.</td>
+                                    </tr>
+                                </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="8" class="ir_textMainHighlight">โออิชิ<br>กรีนที</td>
+                                            <td>น้ำผึ้งผสมมะนาว</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></i></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green"><i class="iconcorp-circle"></i></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>น้ำผึ้งผสมมะนาว<br>สูตรดับเบิ้ลเลมอน</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ข้าวญี่ปุ่น</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>รสดั้งเดิม</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>สตรอร์เบอร์รี่</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>องุ่นเคียวโฮ</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ส้มยูซุ</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>แตงโม</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr class="top">
+                                            <td rowspan="4" class="ir_textMainHighlight">โออิชิ<br>คาบูเซฉะ</td>
+                                            <td>เก็นไมฉะ<br>สูตรไม่มีน้ำตาล</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>เกนไมฉะ<br>สูตรน้ำตาลน้อย</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>คาบูเซฉะ<br>สูตรไม่มีน้ำตาล</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>คาบูเซฉะ<br>สูตรน้ำตาลน้อย</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green"><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr class="top">
+                                            <td class="ir_textMainHighlight">โออิชิ<br>แบล็คที</td>
+                                            <td>ชาดำผสมมะนาว</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                        </tr>
+                                        <tr class="top">
+                                            <td class="ir_textMainHighlight">โออิชิ<br>ชาคูลล์ซ่า</td>
+                                            <td>น้ำผึ้งผสมมะนาว</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class="">&nbsp;</td>
+                                            <td class="green">&nbsp;</td>
+                                            <td class=""><img src="./img/circle.png" alt="" class="circle"></td>
+                                        </tr>
+                                    </tbody>
+                            </table>
                         </div>
                     </div>
                     </div><!--End Bavarage-->
