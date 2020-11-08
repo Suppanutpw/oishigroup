@@ -27,22 +27,41 @@
 
   <!-- เนื้อหา {อย่าลบ section เด็ดขาด!!!} -->
   <section id="content" style="z-index: 20 !important;">
+  <div class="content-wrap nobottompadding" style="margin-top: -50px;">
     <div class="container clearfix">
+      <div class="oishi-header-section oishi-header-section-align">
       <h1 class="text-center"><font color="red">OISHI</font> NEWS & <span class="normal">ACTIVITY</span></h1>
+      </div>
+      <div class="tab-container" id="popup-content" style="padding-top:20px">
+            <div id="news" style="display"><div class="row"id="new-and-activity"></div></div>
+      </div>
     </div>
-    <div></div>
   </section>
   <script>
-        let requestURL = './json/news_activity.json'; 
-        let request = new XMLHttpRequest(); 
-        request.onreadystatechange = function () { 
-            if (request.readyState == 4 && request.status == 200) {             
-                dataReportStatus(JSON.parse(request.responseText));            
-            } }; 
-        request.open("GET", requestURL, true); 
-        request.send(); 
-        function dataReportStatus(data) {
+      function showSildeJsonBig(jsonURL, putID, owlClass) {
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+
+          var data = JSON.parse(request.responseText), op = "";
+
+          for (var i = 0; i < data.length; i++) {
+            // trim String and generate html content
+            var content = data[i].content.substr(0, 165);
+            content = content.substr(0, Math.min(content.length, content.lastIndexOf(" ")))
+
+            op += `<div class="col-md-4"><div class="card item"><img class="card-img-top" src="${data[i].img}">`;
+            op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
+            op += `<a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`;
+          }
+          $(putID).html(op);
         }
-  </script>
+      };
+      request.open("GET", jsonURL, true);
+      request.send();
+    }
+
+        showSildeJsonBig("json/news_activity.json", '#new-and-activity', '.owl-new-activity');
+    </script>
 <!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
 <?php require('footer.php'); ?>
