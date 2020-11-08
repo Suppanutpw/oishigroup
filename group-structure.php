@@ -16,6 +16,9 @@ center {
     margin-left: auto;
     margin-right: auto;
 }
+#selected6{
+        color:red;
+}
   </style>
 </head>
 <body>
