@@ -22,6 +22,9 @@
         .table{
             margin-bottom: 40px;
         }
+        #selected9{
+        color:red;
+        }
     </style>
 </head>
 <body>

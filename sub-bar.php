@@ -22,27 +22,27 @@
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="group-structure.php">โครงสร้างกลุ่มบริษัท</a>
+                            <a class="nav-link" href="group-structure.php" id="selected6">โครงสร้างกลุ่มบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="committee.php">คณะกรรมการบริษัท</a>
+                            <a class="nav-link" href="committee.php" id="selected7">คณะกรรมการบริษัท</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="Board-of-Director.php">คณะผู้บริหาร</a>
+                            <a class="nav-link" href="Board-of-Director.php" id="selected8">คณะผู้บริหาร</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="subcomittee.php">คณะกรรมการชุดย่อย</a>
+                            <a class="nav-link" href="subcomittee.php" id="selected9">คณะกรรมการชุดย่อย</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" href="insider.php">หัวหน้าหน่วยงานตรวจสอบภายใน</a>
+                            <a class="nav-link" href="insider.php" id="selected10">หัวหน้าหน่วยงานตรวจสอบภายใน</a>
                         </li>
                         <img src="./img/line.png" alt="">
                         <li class="nav-item">
-                            <a class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</a>
+                            <div class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</div>
                             <div id="box" style="display:none; padding: 0 0 0 2rem;">
                                 <a href="">การกำกับดูแลกิจการที่ดี</a><br>
                                 <a href="">จรรยาบรรณธุรกิจ</a><br>
