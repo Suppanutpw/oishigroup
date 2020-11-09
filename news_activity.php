@@ -27,22 +27,61 @@
 
   <!-- เนื้อหา {อย่าลบ section เด็ดขาด!!!} -->
   <section id="content" style="z-index: 20 !important;">
+  <div class="content-wrap nobottompadding" style="margin-top: -50px;">
     <div class="container clearfix">
+      <div class="oishi-header-section oishi-header-section-align">
       <h1 class="text-center"><font color="red">OISHI</font> NEWS & <span class="normal">ACTIVITY</span></h1>
+      </div>
+      <div class="tab-container" id="popup-content" style="padding-top:20px">
+            <div id="news" style="display"><div class="row"id="new-and-activity"></div></div>
+      </div>
     </div>
-    <div></div>
   </section>
   <script>
-        let requestURL = './json/news_activity.json'; 
-        let request = new XMLHttpRequest(); 
-        request.onreadystatechange = function () { 
-            if (request.readyState == 4 && request.status == 200) {             
-                dataReportStatus(JSON.parse(request.responseText));            
-            } }; 
-        request.open("GET", requestURL, true); 
-        request.send(); 
-        function dataReportStatus(data) {
+    $(document).on('click', '.inline-popups', function(){
+      $("#outer-pop").html(op=""); // clear lastest content
+      try {
+        data = JSON.parse(this.getElementsByTagName("none")[0].innerHTML);
+        op += `<div id="popups" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`;
+        op += `<img class="img-fluid" src="${data.img}"><div class="mt-4">`;
+        op += `<h1>${data.title}</h1><p>${data.content}</p></div></div></div>`;
+        $("#outer-pop").html(op);
+      } catch (e) {
+        console.error(e);
+      }
+
+      $.magnificPopup.open({
+          items: {
+              src: $("#popups"),
+          },
+          type: 'inline',
+          mainClass: 'mfp-fade'
+      });
+    });
+      function showSildeJsonBig(jsonURL, putID, owlClass) {
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+
+          var data = JSON.parse(request.responseText), op = "";
+
+          for (var i = 0; i < data.length; i++) {
+            // trim String and generate html content
+            var content = data[i].content.substr(0, 165);
+            content = content.substr(0, Math.min(content.length, content.lastIndexOf(" ")))
+
+            op += `<div class="col-md-4"><div class="card item"><img class="card-img-top" src="${data[i].img}">`;
+            op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
+            op += ` <p class="card-text" style="color:red">${data[i].date}</p><a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a><></div></div></div>`;
+          }
+          $(putID).html(op);
         }
-  </script>
+      };
+      request.open("GET", jsonURL, true);
+      request.send();
+    }
+
+        showSildeJsonBig("json/news_activity.json", '#new-and-activity', '.owl-new-activity');
+    </script>
 <!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
 <?php require('footer.php'); ?>

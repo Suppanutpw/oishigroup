@@ -20,6 +20,13 @@ hr {
     border-style: dashed;
     color: red;
 }
+#mark5{
+  color:#000000;
+  font-weight: 500;
+}
+#bar{
+  color:red;
+}
   </style>
 </head>
 <body>

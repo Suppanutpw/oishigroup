@@ -16,6 +16,13 @@ center {
     margin-left: auto;
     margin-right: auto;
 }
+#mark1{
+  color:#000000;
+  font-weight: 500;
+}
+#bar{
+  color:red;
+}
   </style>
 </head>
 <body>
