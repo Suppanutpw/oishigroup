@@ -44,16 +44,16 @@
                         <li class="nav-item">
                             <div class="nav-link" onclick="appear()" id="bar">การกำกับดูแลกิจการที่ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</div>
                             <div id="box" style="display:none; padding: 0 0 0 2rem;">
-                                <a href="">การกำกับดูแลกิจการที่ดี</a><br>
-                                <a href="">จรรยาบรรณธุรกิจ</a><br>
-                                <a href="">ข้อบังคับบริษัท</a><br>
-                                <a href="booklet.php" id="mark">หนังสือบริคณห์สนธิ</a><br>
-                                <a href="">หนังสือรับรองบริษัท</a><br>
-                                <a href="">กฏบัตรคณะกรรมการ</a><br>
-                                <a href="">รายงานการถือหุ้นของคณะกรรมการและผู้บริหาร</a><br>
-                                <a href="">ระเบียบการรับเรื่องร้องเรียนหรือเบาะแสและการให้ความคุ้มครอง</a><br>
-                                <a href="risk.php" id="mark1">ปัจจัยความเสี่ยง</a><br>
-                                <a href="">นโยบายการต่อต้านทุจริตคอร์รัปชั่น</a><br>
+                                <a href="good-manager.php" id="mark">การกำกับดูแลกิจการที่ดี</a><br>
+                                <a href="moral-code.php" id="mark1">จรรยาบรรณธุรกิจ</a><br>
+                                <a href="rules.php" id="mark2">ข้อบังคับบริษัท</a><br>
+                                <a href="booklet.php" id="mark3">หนังสือบริคณห์สนธิ</a><br>
+                                <a href="assurance.php" id="mark4">หนังสือรับรองบริษัท</a><br>
+                                <a href="กฏบัตร.php" id="mark5">กฏบัตรคณะกรรมการ</a><br>
+                                <a href="stocks.php" id="mark6">รายงานการถือหุ้นของคณะกรรมการและผู้บริหาร</a><br>
+                                <a href="legalprotection.php" id="mark7">ระเบียบการรับเรื่องร้องเรียนหรือเบาะแสและการให้ความคุ้มครอง</a><br>
+                                <a href="risk.php" id="mark8">ปัจจัยความเสี่ยง</a><br>
+                                <a href="anticorruption.php" id="mark9">นโยบายการต่อต้านทุจริตคอร์รัปชั่น</a><br>
                             </div>
                         </li>
                         <img src="./img/line.png" alt="">

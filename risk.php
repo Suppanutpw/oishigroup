@@ -19,7 +19,7 @@ center {
 .owl{
     width: 20px
 }
-#mark1{
+#mark8{
   color:#000000;
   font-weight: 500;
 }
