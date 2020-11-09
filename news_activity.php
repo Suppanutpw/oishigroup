@@ -38,6 +38,26 @@
     </div>
   </section>
   <script>
+    $(document).on('click', '.inline-popups', function(){
+      $("#outer-pop").html(op=""); // clear lastest content
+      try {
+        data = JSON.parse(this.getElementsByTagName("none")[0].innerHTML);
+        op += `<div id="popups" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`;
+        op += `<img class="img-fluid" src="${data.img}"><div class="mt-4">`;
+        op += `<h1>${data.title}</h1><p>${data.content}</p></div></div></div>`;
+        $("#outer-pop").html(op);
+      } catch (e) {
+        console.error(e);
+      }
+
+      $.magnificPopup.open({
+          items: {
+              src: $("#popups"),
+          },
+          type: 'inline',
+          mainClass: 'mfp-fade'
+      });
+    });
       function showSildeJsonBig(jsonURL, putID, owlClass) {
       var request = new XMLHttpRequest();
       request.onreadystatechange = function () {
@@ -52,7 +72,7 @@
 
             op += `<div class="col-md-4"><div class="card item"><img class="card-img-top" src="${data[i].img}">`;
             op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-            op += `<a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`;
+            op += ` <p class="card-text" style="color:red">${data[i].date}</p><a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a><></div></div></div>`;
           }
           $(putID).html(op);
         }
