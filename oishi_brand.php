@@ -278,7 +278,7 @@
                                   <img class="img-rounded img-fluid" src="${data2[i].img}">
                                   </div>
                                   <div class="mt-4" style="text-align:left">
-                                    <h1>${data2[i].title}</h1>
+                                    <h1 style="font-size:24px">${data2[i].title}</h1>
                                     <p>${data2[i].describe}</p>
                                 </div>
                                 <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
@@ -295,7 +295,7 @@
                                   <img class="img-fluid" src="${data2[i].img}">
                                 </div>
                                   <div class="mt-4" style="text-align:left">
-                                    <h1>${data2[i].title}</h1>
+                                    <h1 style="font-size:24px">${data2[i].title}</h1>
                                     <p>${data2[i].describe}</p>
                                   </div>
                                   <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
@@ -311,7 +311,7 @@
                                   <img class="img-fluid" src="${data2[11].img}">
                                 </div>
                                   <div class="mt-4" style="text-align:left">
-                                    <h1>${data2[11].title}</h1>
+                                    <h1 style="font-size:24px">${data2[11].title}</h1>
                                     ${data2[11].describe}
                                 </div>
                                 <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
@@ -327,7 +327,7 @@
                                 <img class="img-fluid" src="${data2[i].img}">
                               </div>
                               <div class="mt-4" style="text-align:left">
-                                <h1>${data2[i].title}</h1>
+                                <h1 style="font-size:24px">${data2[i].title}</h1>
                                 <p>${data2[i].describe}</p>
                               </div>
                               <div class="home-brand" style="margin-top:20px; font-size:18px; color:red; font-weight:normal">
