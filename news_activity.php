@@ -7,6 +7,20 @@
       p.normal {
   font-weight: normal;
 }
+      .col-md-4{
+        margin-bottom:50px;
+        padding-bottom:50px
+      }
+      .card-title{
+        font-size:16px;
+        color:#666;
+        font-weight:normal;
+        line-height: 1.5 !important;
+        
+      }
+      .card{
+        border:none;
+      }
   </style>
 </head>
 <body>
@@ -29,8 +43,8 @@
   <section id="content" style="z-index: 20 !important;">
   <div class="content-wrap nobottompadding" style="margin-top: -50px;">
     <div class="container clearfix">
-      <div class="oishi-header-section oishi-header-section-align">
-      <h1 class="text-center"><font color="red">OISHI</font> NEWS & <span class="normal">ACTIVITY</span></h1>
+      <div class="oishi-header-section oishi-header-section-align" style="padding-top:50px;padding-bottom:30px">
+      <h1 class="text-center" style="font-size:36px; color:red; font-weight:normal">OISHI <span style="color:#333">NEWS & </span><i style="color:#333; font-style: normal;font-family: 'Kanit-ExtraLight', sans-serif;">ACTIVITY</i></h1>
       </div>
       <div class="tab-container" id="popup-content" style="padding-top:20px">
             <div id="news" style="display"><div class="row"id="new-and-activity"></div></div>
@@ -71,8 +85,8 @@
             content = content.substr(0, Math.min(content.length, content.lastIndexOf(" ")))
 
             op += `<div class="col-md-4"><div class="card item"><img class="card-img-top" src="${data[i].img}">`;
-            op += `<div class="card-body"><h4 class="card-title">${data[i].title}</h4>`;
-            op += ` <p class="card-text" style="color:red">${data[i].date}</p><a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a><></div></div></div>`;
+            op += `<div class="card-body"><p class="card-title">${data[i].title}</p>`;
+            op += ` <p class="card-text" style="color:red;font-size:14px">${data[i].date}</p><a class="inline-popups card-button float-right" href="#popups"><none>${JSON.stringify(data[i])}</none>รายละเอียด<i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div></div>`;
           }
           $(putID).html(op);
         }
