@@ -43,7 +43,11 @@
     <div class="popup-text-pic">
       <img class="img-fluid" src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZWt5uOWxNqVgnUIRnnhFngXa2ttHqDnSclT4eKMvFn6UPjnX1dZU.jpg">
       <div class="mt-4">
+<<<<<<< Updated upstream
         <h1>สวัสดีจ้า มาปรับทัศนคติกันเถอะ1!!</h1>
+=======
+        <h1>สวัสดีจ้า มาป!!</h1>
+>>>>>>> Stashed changes
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus laboriosam odio voluptates qui nemo animi, officiis, maxime quisquam veritatis sint necessitatibus illo velit. Consectetur recusandae tempore consequatur sed nostrum mollitia nesciunt voluptatum eius accusantium magnam, a, similique voluptas dignissimos esse pariatur asperiores rem. Iste inventore voluptas est, repellendus similique provident?</p>
       </div>
     </div>
