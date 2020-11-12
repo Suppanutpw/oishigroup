@@ -12,7 +12,7 @@
                 $("#delivery").css("display", "none");
                 $( ".nav-btn" ).css( "border-bottom", "2px solid #ccc");
                 $( ".category" ).css( "color", "#333333");
-                $(".span-class").css("color", "#666666")               
+                $(".span-class").css("color", "#666666")
                 $("#btn1").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#oishi1").css("color", "red")
                 $("#span1").css("color", "red")
@@ -32,7 +32,7 @@
                 $("#span2").css("color", "red")
 
 
- 
+
             });
             $("#btn3").click(function(){
                 $("#beverage").css("display", "none");
@@ -74,17 +74,17 @@
     }
     #btn1, #btn2, #btn3, #btn4{
       width: 100%;
-      
+
     }
     .nav-btn{
         width:100%;
-        background-color:#ffffff00; 
+        background-color:#ffffff00;
         border:none;
         border-bottom:solid 2px #ccc;
         padding-left:15px;
         padding-right:15px;
         padding-bottom:15px
-        
+
     }
     .icon{
       margin-right:10px;
@@ -137,13 +137,13 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="/img/Banner-Green-Tea.png" alt="" style="width: 100%">
+              <img src="img/Banner-Green-Tea.png" alt="" style="width: 100%">
             </div>
             <div class="swiper-slide">
-              <img src="/img/banner_brand_restaurant.jpg" alt="" style="width: 100%">
+              <img src="img/banner_brand_restaurant.jpg" alt="" style="width: 100%">
             </div>
             <div class="swiper-slide">
-              <img src="/img/PackedFood-banner.png" alt="" style="width: 100%">
+              <img src="img/PackedFood-banner.png" alt="" style="width: 100%">
             </div>
         </div>
         <!-- If we need pagination -->
@@ -177,7 +177,7 @@
               <li class="li-class">
                 <button class="nav-btn" id="btn1" style="border-bottom-color:rgb(179, 0, 0);">
                   <div class="tab-menu">
-                    <div class="icon"><img class="nav-img" src="/img/icon-beverage.png"></div>
+                    <div class="icon"><img class="nav-img" src="img/icon-beverage.png"></div>
                     <div class="name"><h1 id="oishi1" class="category" style="color:red">OISHI <span id="span1" class="span-class" style="color:red">BEVERAGE</span></h1></div>
                   </div>
                 </button>
@@ -185,7 +185,7 @@
               <li class="li-class">
                 <button class="nav-btn" id="btn2">
                   <div class="tab-menu">
-                    <div class="icon"><img class="nav-img" src="/img/icon-eato.png" alt=""></div>
+                    <div class="icon"><img class="nav-img" src="img/icon-eato.png" alt=""></div>
                     <div class="name"><h1 id="oishi2" class="category">OISHI <span id="span2" class="span-class">EATO</span></h1></div>
                   </div>
                 </button>
@@ -193,7 +193,7 @@
               <li class="li-class">
                 <button class="nav-btn" id="btn3">
                   <div class="tab-menu">
-                    <div class="icon"><img class="nav-img" src="/img/icon-restaurant.png" alt=""></div>
+                    <div class="icon"><img class="nav-img" src="img/icon-restaurant.png" alt=""></div>
                     <div class="name"><h1 id="oishi3" class="category">OISHI <span id="span3" class="span-class">RESTAURANT</span></h1></div>
                   </div>
                 </button>
@@ -201,7 +201,7 @@
               <li class="li-class">
                 <button class="nav-btn" id="btn4">
                 <div class="tab-menu">
-                  <div class="icon"><img class="nav-img" src="/img/icon-delivery.png" alt=""></div>
+                  <div class="icon"><img class="nav-img" src="img/icon-delivery.png" alt=""></div>
                   <div class="name"><h1 id="oishi4" class="category">OISHI <span id="span4" class="span-class">DELIVERY</span></h1></div>
                 </div>
                 </button>
@@ -217,15 +217,15 @@
     </div>
   </section>
   <script>
-        let requestURL = './json/brand.json'; 
-        let request = new XMLHttpRequest(); 
-        request.onreadystatechange = function () { 
-            if (request.readyState == 4 && request.status == 200) {             
-                dataReportStatus(JSON.parse(request.responseText));            
-            } }; 
-        request.open("GET", requestURL, true); 
-        request.send(); 
-        
+        let requestURL = './json/brand.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            } };
+        request.open("GET", requestURL, true);
+        request.send();
+
         function dataReportStatus(data) {
           let display1 = ""
           let display2 = ""
@@ -257,19 +257,19 @@
           document.getElementById('eato-content').innerHTML += display2
           document.getElementById('restaurant-content').innerHTML += display3
           document.getElementById('delivery-content').innerHTML += display4
-          
+
         }
   </script>
   <script>
-        let requestURL1 = './json/brand-popup.json'; 
-        let request1 = new XMLHttpRequest(); 
-        request1.onreadystatechange = function () { 
-            if (request1.readyState == 4 && request1.status == 200) {             
-                dataReportStatus1(JSON.parse(request1.responseText));            
-            } }; 
-        request1.open("GET", requestURL1, true); 
-        request1.send(); 
-        
+        let requestURL1 = './json/brand-popup.json';
+        let request1 = new XMLHttpRequest();
+        request1.onreadystatechange = function () {
+            if (request1.readyState == 4 && request1.status == 200) {
+                dataReportStatus1(JSON.parse(request1.responseText));
+            } };
+        request1.open("GET", requestURL1, true);
+        request1.send();
+
         function dataReportStatus1(data2) {
             let display5 = ""
             for (i=0; i<7; i++){

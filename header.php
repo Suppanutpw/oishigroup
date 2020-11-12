@@ -7,7 +7,7 @@
   <div class="container clearfix">
     <ul>
       <li>
-        <a href="./index.php?lang=en">
+        <a href="#">
           <img src="./img/icon-en.jpg"> ENGLISH
         </a>
       </li>
@@ -32,14 +32,14 @@
       </buttons>
       <div class="collapse navbar-collapse" id="topMenu">
         <div class="navbar-nav" style="touch-action: pan-y;">
-            <a class="nav-item nav-link" href="/business-overview.php" style="border: none !important;" target="_blank">About Oishi</a>
-            <a class="nav-item nav-link" href="/oishi_brand.php">Oishi Brand</a>
-            <a class="nav-item nav-link" href="/news_activity.php">Oishi News &amp; Activity</a>
-            <a class="nav-item nav-link" href="/promotion.php">Oishi Promotion</a>
-            <a class="nav-item nav-link" href="/export_center.php">Export Center</a>
-            <a class="nav-item nav-link" href="/contact.php">Contact Us</a>
-            <a class="nav-item nav-link" href="/investor.php" target="_blank">Investor Relations</a>
-            <a class="nav-item nav-link" href="/contact.php#career">Career</a>
+            <a class="nav-item nav-link" href="business-overview.php" style="border: none !important;" target="_blank">About Oishi</a>
+            <a class="nav-item nav-link" href="oishi_brand.php">Oishi Brand</a>
+            <a class="nav-item nav-link" href="news_activity.php">Oishi News &amp; Activity</a>
+            <a class="nav-item nav-link" href="promotion.php">Oishi Promotion</a>
+            <a class="nav-item nav-link" href="export_center.php">Export Center</a>
+            <a class="nav-item nav-link" href="#">Contact Us</a>
+            <a class="nav-item nav-link" href="#">Investor Relations</a>
+            <a class="nav-item nav-link" href="#">Career</a>
         </div>
       </div>
     </nav>

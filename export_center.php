@@ -15,7 +15,7 @@
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn1").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn1").css("color", "red")
-                
+
 
             });
             $("#btn2").click(function(){
@@ -28,7 +28,7 @@
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn2").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn2").css("color", "red")
-                   
+
             });
             $("#btn3").click(function(){
                 $("#green-tea").css("display", "none");
@@ -40,7 +40,7 @@
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn3").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn3").css("color", "red")
-        
+
             });
             $("#btn4").click(function(){
                 $("#green-tea").css("display", "none");
@@ -52,7 +52,7 @@
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn4").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn4").css("color", "red")
-                
+
             });
             $("#btn5").click(function(){
                 $("#green-tea").css("display", "none");
@@ -64,7 +64,7 @@
                 $( ".nav-btn" ).css( "color", "black");
                 $("#btn5").css("border-bottom", "2px solid rgb(179, 0, 0)");
                 $("#btn5").css("color", "red")
-                
+
             });
         });
     </script>
@@ -120,7 +120,7 @@
         float: left !important;
     }
   </style>
-  
+
 </head>
 <body>
   <!-- แถบบาร์ด้านบน -->
@@ -129,7 +129,7 @@
   <!-- รูปด้านบน ถัดจาก menubar สีเทาด้านบน -->
   <!-- เริ่ม slide show รูปด้านบน {อย่าลบ section เด็ดขาด!!!} -->
   <section id="slider" class="swiper_wrapper clearfix" data-loop="true" data-autoplay="5000">
-    <img src="\img\export_banner.jpg" style="width:100%">
+    <img src="img\export_banner.jpg" style="width:100%">
   </section>
 
   <!-- slide show ลายพู่กันด้านล่าง -->
@@ -148,7 +148,7 @@
                     At present, our product are exported to international market.
                     <br>
                     <b style="color: #000;font-weight: 600;">Asia :</b>
-                    Laos ,Cambodia , Myanmar , Brunei , Australia , New Zealand 
+                    Laos ,Cambodia , Myanmar , Brunei , Australia , New Zealand
                     <br>
                     <b style="color: #000;font-weight: 600;">EU :</b>
                     Germany , Switzerland , Hungary , St.Martin , Barbados , Czech Republic , Slovakia , Reunion , Russia , Netherlands , Finland
@@ -168,11 +168,11 @@
         <div class="container clearfix">
             <div class="tabs">
                 <ul class="nav nav-bar" style="padding-bottom:50px">
-                    <li class="li-size"><button class="nav-btn" id="btn1" style="border-bottom-color:rgb(179, 0, 0);color:red"><img class="nav-img" src="\img\icon-export-1.png"><div><h1 class="nav-name">โออิชิกรีนที</h1><h2 style="font-size:12px; float:left">OISHI GREEN TEA</h2></div></button></li>
-                    <li class="li-size"><button class="nav-btn" id="btn2"><img class="nav-img" src="\img\icon-export-2.png"><div><h1 class="nav-name">โออิชิ แบล็คที</h1><h2 style="font-size:12px; float:left">OISHI BLACK TEA</h2></div></button></li>
-                    <li class="li-size"><button class="nav-btn" id="btn3"><img class="nav-img" src="\img\icon-export-3.png"><div><h1 class="nav-name">โออิชิ ชาคูลล์ซ่า</h1><h2 style="font-size:12px; float:left">OISHI CHAKULZA</h2></div></button></li>
-                    <li class="li-size"><button class="nav-btn" id="btn4"><img class="nav-img" src="\img\icon-export-4.png"><div><h1 class="nav-name">จับใจ</h1><h2 style="font-size:12px; float:left">JUBJAI</h2></div></button></li>
-                    <li class="li-size"><button class="nav-btn" id="btn5"><img class="nav-img" src="\img\icon-export-5.png"><div><h1 class="nav-name">โออิชิ โกลด์</h1><h2 style="font-size:12px; float:left">OISHI GOLD</h2></div></button></li>
+                    <li class="li-size"><button class="nav-btn" id="btn1" style="border-bottom-color:rgb(179, 0, 0);color:red"><img class="nav-img" src="img\icon-export-1.png"><div><h1 class="nav-name">โออิชิกรีนที</h1><h2 style="font-size:12px; float:left">OISHI GREEN TEA</h2></div></button></li>
+                    <li class="li-size"><button class="nav-btn" id="btn2"><img class="nav-img" src="img\icon-export-2.png"><div><h1 class="nav-name">โออิชิ แบล็คที</h1><h2 style="font-size:12px; float:left">OISHI BLACK TEA</h2></div></button></li>
+                    <li class="li-size"><button class="nav-btn" id="btn3"><img class="nav-img" src="img\icon-export-3.png"><div><h1 class="nav-name">โออิชิ ชาคูลล์ซ่า</h1><h2 style="font-size:12px; float:left">OISHI CHAKULZA</h2></div></button></li>
+                    <li class="li-size"><button class="nav-btn" id="btn4"><img class="nav-img" src="img\icon-export-4.png"><div><h1 class="nav-name">จับใจ</h1><h2 style="font-size:12px; float:left">JUBJAI</h2></div></button></li>
+                    <li class="li-size"><button class="nav-btn" id="btn5"><img class="nav-img" src="img\icon-export-5.png"><div><h1 class="nav-name">โออิชิ โกลด์</h1><h2 style="font-size:12px; float:left">OISHI GOLD</h2></div></button></li>
                 </ul>
                 <div class="tabs-content" id="popup-content" stlye="padding-top:20px">
                     <div id="green-tea" style="display:"></div>
@@ -180,7 +180,7 @@
                     <div id="chakulza" style="display:none"></div>
                     <div id="jubjai" style="display:none"></div>
                     <div id="gold" style="display:none">
-                        
+
                     </div>
                 </div>
             </div>
@@ -188,16 +188,16 @@
     </div>
   </section>
   <script>
-        let requestURL = './json/oishigold.json'; 
-        let request = new XMLHttpRequest(); 
-        request.onreadystatechange = function () { 
-            if (request.readyState == 4 && request.status == 200) {             
-                dataReportStatus(JSON.parse(request.responseText));            
-            } }; 
-        request.open("GET", requestURL, true); 
-        request.send(); 
-        
-        function dataReportStatus(data) { 
+        let requestURL = './json/oishigold.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            } };
+        request.open("GET", requestURL, true);
+        request.send();
+
+        function dataReportStatus(data) {
             let display = ""
             let display1 = ""
             let display2 = ""
@@ -225,15 +225,15 @@
         }
     </script>
     <script>
-        let requestURL1 = './json/export-popup.json'; 
-        let request1 = new XMLHttpRequest(); 
-        request1.onreadystatechange = function () { 
-            if (request1.readyState == 4 && request1.status == 200) {             
-                dataReportStatus1(JSON.parse(request1.responseText));            
-            } }; 
-        request1.open("GET", requestURL1, true); 
-        request1.send(); 
-        
+        let requestURL1 = './json/export-popup.json';
+        let request1 = new XMLHttpRequest();
+        request1.onreadystatechange = function () {
+            if (request1.readyState == 4 && request1.status == 200) {
+                dataReportStatus1(JSON.parse(request1.responseText));
+            } };
+        request1.open("GET", requestURL1, true);
+        request1.send();
+
         function dataReportStatus1(data2) {
             let display5 = ""
             for (i=0; i<25; i++){
@@ -256,6 +256,6 @@
       });
     }
     </script>
-    
+
 <!-- ไม่ต้องมี tag ปิด body กับ html นะเออ -->
 <?php require('footer.php'); ?>
