@@ -236,7 +236,7 @@
         
         function dataReportStatus1(data2) {
             let display5 = ""
-            for (i=0; i<25; i++){
+            for (i=0; i<26; i++){
                 display5 += `<div id="popup-point${i}" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`
                 display5 += `<img class="img-fluid" src="${data2[i].img}"></div></div>`
             }
