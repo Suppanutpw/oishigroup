@@ -51,14 +51,20 @@
       </div>
     </div>
   </section>
+  <div id="outer-pop"></div>
   <script>
     $(document).on('click', '.inline-popups', function(){
       $("#outer-pop").html(op=""); // clear lastest content
       try {
         data = JSON.parse(this.getElementsByTagName("none")[0].innerHTML);
         op += `<div id="popups" data-effect="mfp-zoom-in" class="white-popup mfp-with-anim mfp-hide clearfix"><div class="popup-text-pic">`;
-        op += `<img class="img-fluid" src="${data.img}"><div class="mt-4">`;
-        op += `<h1>${data.title}</h1><p>${data.content}</p></div></div></div>`;
+        op += `<img class="img-fluid" src="${data.img2}"><div class="mt-4">`;
+        if(data.title == "“โออิชิ ทริปสุดโอ โกเจแปน” ตอนฟินหนาวหนึบกับ เป๊ก ผลิตโชค"){
+          op += `<h1>${data.title}</h1><p>${data.content}</p><a href="https://www.facebook.com/OishiDrinkStation/" style="color:red">www.oishidrink.com</a></div></div></div>`;
+        }
+        else{
+          op += `<h1>${data.title}</h1><p>${data.content}</p></div></div></div>`;
+        }
         $("#outer-pop").html(op);
       } catch (e) {
         console.error(e);

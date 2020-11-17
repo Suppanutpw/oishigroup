@@ -2,6 +2,7 @@ body {
   font-family: 'Kanit', sans-serif;
   background-color: #f5f5f5;
   color: #333;
+  overflow-x: hidden;
 }
 a {
   color: #333;

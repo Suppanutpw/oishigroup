@@ -103,7 +103,7 @@
 
       <div class="header-part">
         <h1>OISHI <span>NEWS &<span> <i>ACTIVITY</i></h1>
-        <a class="round-button" href="/news_activity.php">
+        <a class="round-button" href="news_activity.php">
           <i class="fas fa-plus"></i>
         </a>
       </div>
